@@ -30,259 +30,225 @@
     .owl-carousel .owl-item .slide .slider-card {
         bottom: 10%;
     }
-    #what-we-do {
-        .headings {
-            .sub-heading {
-                font-size: 1.8rem;
+    #home {
+        .home-col-one {
+            width: 15%;
+            .home-heading {
+                font-size: 2rem;
             }
         }
-        .services {
-            width: 85vw;
-            .card {
-                min-height: 30vh;
-                i {
-                    font-size: 2rem!important;
-                }
-                .card-title {
-                    font-size: 1.1rem;
-                    margin-bottom: 0.5rem;
-                }
-                .card-description {
-                    margin-bottom: 1rem;
-                }
-            }
-            .card {
-                min-height: 30vh;
-            }
-        }
-    }
-    #why-choose-us {
-        .headings {
-            .heading {
-                font-size: 0.9rem;
-            }
-            .sub-heading {
+        .home-col-two {
+            width: 65%;
+            .design-philosophy-heading,
+            .core-values-heading,
+            .our-services-heading {
                 font-size: 1.4rem;
             }
-        }
-        .principles {
-            max-width: 60vw;
+            .core-values-principles {
+                .values {
+                    .value {
+                        flex-basis: 30%;
+                        .fas {
+                            font-size: 2rem;
+                        }
+                        .value-name {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .our-services {
+                .services {
+                    .service {
+                        flex-basis: 33%;
+                        .fas {
+                            font-size: 2rem;
+                        }
+                        .service-name {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
-    #counters {
-        .counter {
-            padding: 2rem;
-            max-width: 55vw;
-        }
-        .counter-block {
-            i {
-                font-size: 2rem;
-                margin-bottom: 1rem;
-            }
-            .counter-number {
-                font-size: 1.3rem;
-            }
-            .counter-label {
-                font-size: 1rem;
-            }
-        }
-        .building-creative {
-            img {
-                max-width: 90%;
-            }
-        }
-    }
-    #about {
+    /* #about {
         .about-hero {
             .about-hero-text {
                 padding: 1rem 1rem 2rem 1rem;
                 max-width: 15vw;
             }
         }
-        .principal-architect-container{
+        .principal-architect-container {
             padding: 10rem 2rem;
-            .principal-architect-heading{
+            .principal-architect-heading {
                 width: 60vw;
             }
-            .principal-architect{
-                .principal-architect-content{
+            .principal-architect {
+                .principal-architect-content {
                     width: 50vw;
                 }
             }
-            .principal-architect-image{
+            .principal-architect-image {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
             }
         }
-        .our-company {
-            min-height: 60vh;
-            .growth-cards {
-                width: 100vw;
-                .aim {
-                    width: 23vw;
-                    padding: 1.5rem;
+    } */
+    #team {
+        .team-col-one {
+            width: 15%;
+            .team-heading {
+                font-size: 2rem;
+            }
+        }
+        .team-col-two {
+            width: 70%;
+            .about-enad-heading {
+                font-size: 1.4rem;
+            }
+            .principal-architect-container {
+                .principal-architect {
+                    flex-direction: column;
+                    align-items: center;
+                    .principal-architect-image {
+                        img {
+                            max-width: 300px;
+                        }
+                    }
+                    .principal-architect-content {
+                        width: 100%;
+                    }
+                }
+            }
+            .team-members {
+                align-items: center;
+                flex-direction: column;
+                .core-team,
+                .associates {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    .team-card-container {
+                        width: 100%;
+                        .team-card {
+                            flex-basis: 32%;
+                            .member-image {
+                                max-width: 150px;
+                            }
+                            .member-detail {
+                                h4 {
+                                    font-size: 0.9rem;
+                                }
+                                p {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .associates{
+                    .team-card{
+                        flex-basis: 40%!important;
+                    }
                 }
             }
         }
     }
-    #team {
-        padding: 10rem 4rem;
-        flex-direction: column;
-        .team-about {
-            display: flex;
-            .team-creative {
-                img {
-                    max-width: 70%;
-                    margin-bottom: 5rem;
-                }
-            }
-            .team-information {
-                max-width: 40vw;
-                list-style: none;
-                li::before {
-                    content: "💡"; 
-                    
-                    font-size: 1.5rem;
-
-                }
-            }
-        }
-        .team-card-container {
-            order: 1;
-            width: 70vw;
+    #footer {
+        min-height: 20vh;
+        .contact {
+            min-height: 20vh;
+            flex-direction: column;
         }
     }
 }
 
 @media(min-width:1401px) and (max-width:1500px) {
-    .owl-carousel .owl-item .slide .slider-card {
-        bottom: 10%;
-    }
-    #what-we-do {
-        .headings {
-            .sub-heading {
-                font-size: 1.8rem;
-            }
-        }
-        .services {
-            width: 80vw;
-            .card {
-                min-height: 30vh;
-                
-                .card-title {
-                    
-                    margin-bottom: 0.5rem;
+    .owl-carousel{
+        .owl-item{
+            .slide{
+                .slider-card{
+                    bottom: 5%;
                 }
-                .card-description {
-                    margin-bottom: 1rem;
-                }
-            }
-            
-        }
-    }
-    #why-choose-us {
-        .headings {
-            .heading {
-                font-size: 0.9rem;
-            }
-            .sub-heading {
-                font-size: 1.4rem;
-            }
-        }
-        .principles {
-            max-width: 60vw;
-        }
-    }
-    #counters {
-        .counter {
-            padding: 2rem;
-            max-width: 55vw;
-        }
-        .counter-block {
-            i {
-                font-size: 2rem;
-                margin-bottom: 1rem;
-            }
-            .counter-number {
-                font-size: 1.3rem;
-            }
-            .counter-label {
-                font-size: 1rem;
-            }
-        }
-        .building-creative {
-            img {
-                max-width: 90%;
             }
         }
     }
-    #about {
-        .about-hero {
-            .about-hero-text {
-                padding: 1rem 1rem 2rem 1rem;
-                max-width: 15vw;
-            }
-        }
-        .principal-architect-container{
-            padding: 10rem 2rem;
-            .principal-architect-heading{
-                width: 60vw;
-            }
-            .principal-architect{
-                .principal-architect-content{
-                    width: 50vw;
-                }
-            }
-            .principal-architect-image{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-        }
-        .our-company {
-            min-height: 50vh;
-            .growth-cards {
-                width: 100vw;
-                .aim {
-                    width: 23vw;
-                    padding: 1.5rem;
-                }
-            }
+    #home{
+        .home-col-one{
+            width: 15%;
         }
     }
     #team {
-        padding: 10rem 4rem;
-        flex-direction: column;
-        .team-about {
-            display: flex;
-            margin-bottom: 5rem;
-            .team-creative {
-                
-                img {
-                    max-width: 70%;
-                    
+        .team-col-one {
+            width: 15%;
+            
+        }
+        .team-col-two {
+            width: 70%;
+            .about-enad-heading {
+                font-size: 1.8rem;
+            }
+            .principal-architect-container {
+                .principal-architect {
+                    flex-direction: column;
+                    align-items: center;
+                    .principal-architect-image {
+                        img {
+                            max-width: 300px;
+                        }
+                    }
+                    .principal-architect-content {
+                        h2{
+                            font-size: 1.8rem;
+                        }
+                        width: 100%;
+                    }
                 }
             }
-            .team-information {
-                max-width: 40vw;
-                list-style: none;
-                li::before {
-                    content: "💡"; 
-                    
-                    font-size: 1.5rem;
-
+            .team-members {
+                align-items: center;
+                flex-direction: column;
+                .core-team,
+                .associates {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                    .team-card-container {
+                        width: 100%;
+                        .team-card {
+                            flex-basis: 32%;
+                            .member-image {
+                                max-width: 150px;
+                            }
+                            .member-detail {
+                                h4 {
+                                    font-size: 0.95rem;
+                                }
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .associates{
+                    .team-card{
+                        flex-basis: 40%!important;
+                    }
                 }
             }
         }
-        .team-card-container {
-            order: 1;
-            width: 70vw;
-            .team-card{
-                .member-image{
-                    margin-bottom: 2.5rem;
-                }
-            }
+    }
+    
+    #footer{
+        .contact{
+            min-height: 20vh;
+            flex-direction: column;
         }
     }
 }

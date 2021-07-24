@@ -1,6 +1,7 @@
 // google fonts
 @import url("https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap");
 // external files
+@import "utilities";
 @import "variables";
 @import "about";
 * {
@@ -18,67 +19,8 @@ body {
     font-family: "B612", sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
 
-.fwb {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.mt-1 {
-    margin-top: 1rem;
-}
-
-.mt-2 {
-    margin-top: 2rem;
-}
-
-.mt-3 {
-    margin-top: 3rem;
-}
-
-.mt-4 {
-    margin-top: 4rem;
-}
-
-.mt-5 {
-    margin-top: 5rem;
-}
-
-.mb-1 {
-    margin-bottom: 1rem;
-}
-
-.mb-2 {
-    margin-bottom: 2rem;
-}
-
-.mb-3 {
-    margin-bottom: 3rem;
-}
-
-.mb-4 {
-    margin-bottom: 4rem;
-}
-
-.mb-5 {
-    margin-bottom: 5rem;
-}
-
-.lh-15 {
-    line-height: 1.5rem;
-}
-
-.tt-upc {
-    text-transform: uppercase;
-}
-
-.pre-header {
+/* .pre-header {
     padding: 0.8rem;
     background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%);
     display: flex;
@@ -87,21 +29,26 @@ a {
         color: #fff;
         font-size: 1rem;
     }
-}
+} */
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
+    background: rgba(69, 90, 100, 0.3);
     .logo {
-        img {
-            border-radius: 1.5rem;
-        }
-        .company-name {
-            font-size: 2rem;
+        .company-short {
+            font-size: 3rem;
             font-weight: 700;
-            background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 50%);
+            background: linear-gradient( to right, $base-color-green 40%, $base-color-grey 41%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .company-long {
+            font-size: 0.8rem;
+            background: linear-gradient( to right, $base-color-green 10%, $base-color-grey 11%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -110,19 +57,19 @@ header {
     .navigation {
         ul {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-            width: 30vw;
+            width: 20vw;
             li {
                 list-style: none;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-weight: 700;
-                color: $base-color-grey;
-                padding: 0.5rem 0.5rem;
+                color: #000;
+                padding: 0.3rem 0.5rem;
                 transition: 0.5s;
                 &:hover {
-                    background-color: $base-color-grey;
-                    color: #fff;
+                    background-color: #fff;
+                    color: #000;
                 }
             }
         }
@@ -177,10 +124,10 @@ header {
             position: relative;
             .slider-card {
                 position: absolute;
-                bottom: 30%;
-                right: 10%;
+                bottom: 25%;
+                right: 5%;
                 width: 400px;
-                padding: 1.5rem;
+                padding: 1rem;
                 background: rgba(255, 255, 255, 0.8);
                 border-radius: 1rem;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -208,7 +155,77 @@ header {
     }
 }
 
-#what-we-do {
+#home {
+    min-height: 100vh;
+    padding: 5rem 2rem 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    .home-col-one {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        // border-left: 3px solid $base-color-grey;
+        border-right: 3px solid $base-color-grey;
+        .home-heading {
+            font-size: 3rem;
+        }
+    }
+    .home-col-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        padding: 2rem;
+        // background-color: #00d8bd;
+        .about-enad-heading,
+        .design-philosophy-heading,
+        .core-values-heading,
+        .our-services-heading {
+            font-size: 1.8rem;
+        }
+        .core-values-principles {
+            .values {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                padding: 1rem;
+                .value {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-basis: 15%;
+                    margin-bottom: 3rem;
+                    .fas {
+                        font-size: 2.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    .value-name {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem;
+            .service {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-basis: 25%;
+                margin-bottom: 3rem;
+                .service-name {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* #what-we-do {
     min-height: 100vh;
     padding: 5rem 2rem;
     .headings {
@@ -267,9 +284,10 @@ header {
             }
         }
     }
-}
+} */
 
-#why-choose-us {
+
+/* #why-choose-us {
     display: flex;
     justify-content: space-evenly;
     padding: 6rem 2rem;
@@ -331,9 +349,10 @@ header {
             }
         }
     }
-}
+} */
 
-#counters {
+
+/* #counters {
     padding: 5rem 4rem;
     min-height: 70vh;
     display: flex;
@@ -371,22 +390,38 @@ header {
             max-width: 100%;
         }
     }
-}
+} */
 
 #footer {
-    min-height: 50vh;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background: rgba(0, 0, 0, 0.9);
     z-index: -2;
-    .about,
+    /* .about,
     .contact,
     .footer-services {
         flex-basis: 25%;
-    }
+    } */
     .about {
+        .logo {
+            .company-short {
+                font-size: 3rem;
+                font-weight: 700;
+                background: linear-gradient( to right, #00d8bd 40%, #92bed3 41%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .company-long {
+                font-size: 0.8rem;
+                background: linear-gradient( to right, #00d8bd 10%, #92bed3 11%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
         .company-name {
             font-size: 2rem;
             font-weight: 700;
@@ -411,14 +446,15 @@ header {
     }
     .contact {
         display: flex;
-        flex-direction: column;
-        min-height: 15vh;
+        // flex-direction: column;
+        // min-height: 15vh;
         justify-content: space-evenly;
         .detail {
             display: flex;
+            margin-right: 3rem;
             i {
-                margin-right: 1rem;
-                margin-bottom: 2rem;
+                margin-right: 0.2rem;
+                // margin-bottom: 2rem;
                 &::before {
                     background: linear-gradient( to right, #00d8bd 50%, #92bed3 50%);
                     padding: 0.5rem;
@@ -427,10 +463,11 @@ header {
             }
             .contact-detail {
                 color: #fff;
+                font-size: 0.9rem;
             }
         }
     }
-    .footer-services {
+    /* .footer-services {
         display: flex;
         flex-direction: column;
         h4 {
@@ -446,18 +483,245 @@ header {
                 color: #fff;
             }
         }
-    }
+    } */
 }
 
 .copyright {
     display: flex;
-    justify-content: space-evenly;
-    color: #fff;
-    padding: 1rem;
-    background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%);
+    justify-content: flex-end;
+    color: #000;
+    padding: 0.5rem 2rem;
+    font-size: 0.7rem;
+    /* background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%); */
+    background: rgba(69, 90, 100, 0.3);
     .developer-name {
-        color: #000;
+        color: $base-color-green;
     }
 }
 
+//ABOUT PAGE CSS
+#team-banner {
+    .about-hero {
+        min-height: 50vh;
+        background-attachment: fixed;
+        background-image: url(../images/about-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: 0% 50%;
+        position: relative;
+        /* .about-hero-text {
+            max-width: 11vw;
+            background: rgba(255, 255, 255, 1);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+            padding: 1rem 1rem 2rem 1rem;
+            border-radius: 1rem;
+            position: absolute;
+            left: 10%;
+            bottom: 15%;
+            h1 {
+                font-size: 2rem;
+            }
+        } */
+    }
+    /* .our-company {
+        min-height: 50vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/our-company-02.jpg);
+        background-repeat: no-repeat;
+        background-position: 0% 80%;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .growth-cards {
+            display: flex;
+            justify-content: space-evenly;
+            width: 70vw;
+            .aim {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 15vw;
+                background: rgba(255, 255, 255, 0.3);
+                transform: rotate(30deg);
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+                padding: 2rem;
+                border-radius: 1.5rem;
+                transition: 0.5s;
+                &:hover {
+                    transform: rotate(0deg);
+                    background: rgba(255, 255, 255, 1);
+                }
+                h4 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    } */
+}
+
+#team {
+    min-height: 100vh;
+    padding: 5rem 2rem 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    .team-col-one {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        // border-left: 3px solid $base-color-grey;
+        border-right: 3px solid $base-color-grey;
+        .team-heading {
+            font-size: 3rem;
+        }
+    }
+    .team-col-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        padding: 2rem;
+
+        .principal-architect-container {
+            min-height: 90vh;
+            padding: 0 2rem 5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* .principal-architect-heading {
+                width: 40vw;
+                text-align: center;
+                font-size: 1.3rem;
+                color: rgba(0, 0, 0, 0.7);
+                border: 3px solid $base-color-green;
+                padding: 1rem;
+                .primary-services {
+                    text-transform: uppercase;
+                    font-size: 1.7rem;
+                    color: #000;
+                }
+            } */
+            .principal-architect {
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                .principal-architect-content {
+                    width: 60%;
+                    
+                    .highlight-color {
+                        color: $base-color-green;
+                    }
+                    .accomplishments {
+                        list-style: none;
+                    }
+                    .accomplishments li::before {
+                        content: "🌟";
+                        font-size: 1.7rem;
+                        margin-right: 0.5rem;
+                    }
+                }
+                .principal-architect-image {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    img {
+                        border-radius: 1rem;
+                        box-shadow: rgba(0, 105, 93, 0.4) -5px 5px, rgba(0, 105, 93, 0.3) -10px 10px, rgba(0, 105, 93, 0.2) -15px 15px, rgba(0, 105, 93, 0.1) -20px 20px, rgba(0, 105, 93, 0.05) -25px 25px;
+                    }
+                }
+            }
+        }
+        .team-members{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .core-team, .associates{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-card-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 40vw;
+                
+                .team-card {
+                    flex-basis: 10%;
+                    margin-bottom: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .member-image {
+                        margin-bottom: 2.5rem;
+                        border-radius: 1rem;
+                        box-shadow: rgba(0, 105, 93, 0.4) -5px 5px, rgba(0, 105, 93, 0.3) -10px 10px, rgba(0, 105, 93, 0.2) -15px 15px, rgba(0, 105, 93, 0.1) -20px 20px, rgba(0, 105, 93, 0.05) -25px 25px;
+                    }
+                    .member-detail {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    }
+    
+    
+
+
+/* #team {
+    min-height: 100vh;
+    padding: 10rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .team-about{
+        display: flex;
+        justify-content: space-between;
+        order: -1;
+        .team-creative{
+            margin-bottom: 5rem;
+            img{
+                max-width: 70%;
+                
+            }
+        }
+        .team-information {
+            max-width: 30vw;
+            list-style: none;
+            li::before {
+                content: "💡"; 
+                
+                font-size: 1.5rem;
+
+            }
+        }
+    }
+    h2 {
+        width: 700px;
+        position: relative;
+        &::after {
+            position: absolute;
+            left: 50%;
+            bottom: -40%;
+            content: "";
+            width: 50px;
+            height: 2px;
+            background-color: teal;
+        }
+    }
+    
+    .team-creative{
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 100%;
+        }
+    }
+} */
+
+//CSS files imported
 @import "responsive-01";
