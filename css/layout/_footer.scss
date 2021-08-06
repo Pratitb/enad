@@ -1,0 +1,60 @@
+#footer {
+    min-height: 20vh;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #242429eb;
+    z-index: -2;
+    .about {
+        width: 15%;
+        .footer-about-text {
+            color: #fff;
+        }
+        .footer-about {
+            border: 1px solid #fff;
+            border-radius: 1rem;
+            padding: 0.5rem 0.8rem;
+            color: #fff;
+            transition: 0.3s;
+            &:hover {
+                border-radius: 0;
+            }
+        }
+    }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 85%;
+        .detail {
+            display: flex;
+            margin-right: 3rem;
+            i {
+                
+                &::before {
+                    background: #242429e8;
+                    padding: 0.5rem;
+                    border-radius: 1rem;
+                }
+            }
+            .contact-detail {
+                color: #fff;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    color: #000;
+    padding: 0.5rem 2rem;
+    font-size: 0.7rem;
+    /* background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%); */
+    background: #3c3c3c8a;
+    .developer-name {
+        color: $base-color-green;
+    }
+}

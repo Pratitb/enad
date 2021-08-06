@@ -1,0 +1,13 @@
+.content{
+    
+    .project{
+        min-height: 50vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .project-details{
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+#home {
+    min-height: 100vh;
+    display: flex;
+    .content {
+        .about-enad-heading,
+        .design-philosophy-heading,
+        .core-values-heading,
+        .our-services-heading {
+            font-size: 1.8rem;
+        }
+        .core-values-principles {
+            .values {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .value {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-basis: 33%;
+                    margin-bottom: 3rem;
+                    .value-name {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem;
+            .service {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-basis: 25%;
+                margin-bottom: 3rem;
+                .service-name {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.team-banner{
+    background-image: url(https://dummyimage.com/1920x1080/00695c/fff);
+    
+}
+#team {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    .content {
+        .principal-architect {
+            display: flex;
+            justify-content: flex-start;
+            padding: 2rem 0;
+            .principal-architect-content {
+                .highlight-color {
+                    color: $base-color-green;
+                }
+                .accomplishments {
+                    list-style: none;
+                }
+                .accomplishments li::before {
+                    content: "🌟";
+                    font-size: 1.7rem;
+                    margin-right: 0.5rem;
+                }
+            }
+            .principal-architect-image {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-right: 3rem;
+                img {
+                    border-radius: 1rem;
+                    box-shadow: rgba(0, 105, 93, 0.4) -5px 5px, rgba(0, 105, 93, 0.3) -10px 10px, rgba(0, 105, 93, 0.2) -15px 15px, rgba(0, 105, 93, 0.1) -20px 20px, rgba(0, 105, 93, 0.05) -25px 25px;
+                }
+            }
+        }
+        .team-members {
+            display: flex;
+            flex-direction: column;
+            .team-card-container {
+                display: flex;
+                justify-content: space-between;
+                .team-card {
+                    display: flex;
+                    align-items: center;
+                    .member-image {
+                        margin-right: 2rem;
+                        border-radius: 1rem;
+                        box-shadow: rgba(0, 105, 93, 0.4) -5px 5px, rgba(0, 105, 93, 0.3) -10px 10px, rgba(0, 105, 93, 0.2) -15px 15px, rgba(0, 105, 93, 0.1) -20px 20px, rgba(0, 105, 93, 0.05) -25px 25px;
+                    }
+                }
+            }
+        }
+        /* .team-members {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .core-team,
+            .associates {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-card-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .team-card {
+                    
+                    margin-bottom: 5rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .member-image {
+                        margin-bottom: 2.5rem;
+                        
+                    }
+                    .member-detail {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        } */
+    }
+}
