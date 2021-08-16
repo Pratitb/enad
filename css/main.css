@@ -568,7 +568,7 @@ header .navigation ul li:hover {
 
 .banner {
   min-height: 45vh;
-  background: url("../../images/team-banner.jpg");
+  background: url(../../images/team-banner.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 150%;
@@ -701,10 +701,6 @@ header .navigation ul li:hover {
   border-radius: 1rem;
   -webkit-box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px, rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px, rgba(96, 154, 92, 0.05) -25px 25px;
           box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px, rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px, rgba(96, 154, 92, 0.05) -25px 25px;
-}
-
-.project-landing-banner {
-  background-image: url(https://dummyimage.com/1920x1080/00695c/fff);
 }
 
 #projects-landing {
