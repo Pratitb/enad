@@ -1,6 +1,6 @@
 .banner {
     min-height: 45vh;
-    background: url(../../images/team-banner.jpg);
+    background-image: url("../../images/team-banner.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 0 150%;
@@ -21,14 +21,6 @@
             .principal-architect-content {
                 .highlight-color {
                     color: $base-color-green;
-                }
-                .accomplishments {
-                    list-style: none;
-                }
-                .accomplishments li::before {
-                    content: "🌟";
-                    font-size: 1.7rem;
-                    margin-right: 0.5rem;
                 }
             }
             .principal-architect-image {
