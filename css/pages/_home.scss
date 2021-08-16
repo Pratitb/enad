@@ -1,7 +1,13 @@
 #home {
+    width: 65%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
     .content {
+        
         .about-enad-heading,
         .design-philosophy-heading,
         .core-values-heading,
@@ -9,6 +15,7 @@
             font-size: 1.8rem;
         }
         .core-values-principles {
+            
             .values {
                 display: flex;
                 justify-content: space-evenly;
@@ -30,6 +37,7 @@
             justify-content: center;
             flex-wrap: wrap;
             padding: 1rem;
+            
             .service {
                 display: flex;
                 flex-direction: row;

@@ -46,16 +46,12 @@
     margin-right: 2rem;
 }
 
-.sidebar-heading {
-    color: #fff;
+.tj{
+    text-align: justify;
 }
 
 .logo {
-    max-width: 80%;
-}
-
-.footer-logo {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .fas,
@@ -72,59 +68,58 @@
 .fx-c {
     flex-direction: column;
 }
-.bld{
+
+.bld {
     font-weight: bold;
+}
+.br-tl{
+    border-top-left-radius: 1rem;
+}
+.br-tr{
+    border-top-right-radius: 1rem;
+}
+.br-bl{
+    border-bottom-left-radius: 1rem;
+}
+.br-br{
+    border-bottom-right-radius: 1rem;
 }
 
 .address {
     flex-basis: 21%;
 }
 
-.sidebar {
-    width: 15%;
+.logo-link {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    background: $dark-grey;
-    padding: 4rem;
-    .sidebar-heading {
-        font-size: 3rem;
-    }
-    .projects-heading{
-        font-size: 2.5rem;
-    }
+}
+.project-details{
+    text-align: justify;
 }
 
-.content {
+.projects-heading {
+    font-size: 2.5rem;
+}
+.project-text{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 85%;
-    padding: 3rem;
-    background: $light-grey;
-}
-
-.banner {
-    min-height: 40vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 0 170%;
+    .project-details-heading{
+        width: 150px;
+    }
 }
 
 .projects {
-    width: 600px;
-    height: auto;
+    max-width: 640px;
+    
     border-radius: 2rem;
-    .owl-stage-outer{
+    .owl-stage-outer {
         border-radius: 1rem;
     }
-    .owl-nav{
+    .owl-nav {
         button.owl-prev {
             position: absolute;
             top: 40%;
             left: 3%;
             background: rgba(255, 255, 255, 0.5);
-            
             span {
                 padding: 0.4rem;
                 font-size: 1.3rem;
@@ -135,14 +130,22 @@
             top: 40%;
             right: 3%;
             background: rgba(255, 255, 255, 0.5);
-            
             span {
                 padding: 0.4rem;
                 font-size: 1.3rem;
             }
         }
     }
-    .owl-dots{
+    .owl-dots {
         display: none;
     }
+}
+
+.disabled{
+    pointer-events: none;
+    cursor: default;
+}
+
+.footer-icon {
+    font-size: 1rem;
 }

@@ -1,0 +1,144 @@
+@media(min-width:320px) and (max-width:390px) {
+    header {
+        .logo {
+            max-width: 50%;
+        }
+        .navigation {
+            display: none;
+        }
+    }
+    .home-slider {
+        width: 100%;
+        margin: 0;
+        .owl-item {
+            height: 100%;
+            .slide {
+                .slider-card {
+                    width: 150px;
+                    padding: 0.5rem;
+                    bottom: 10%;
+                    .card-text {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+        .owl-nav {
+            display: none;
+        }
+    }
+    /* home page */
+    #home {
+        .content {
+            .content-heading {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+            .core-values-principles {
+                .values {
+                    flex-direction: column;
+                }
+            }
+            .services {
+                flex-direction: column;
+            }
+        }
+    }
+    /* team page */
+    .banner {
+        min-height: 25vh;
+    }
+    #team {
+        .content {
+            .content-heading {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+            .principal-architect {
+                flex-direction: column;
+                .principal-architect-image {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 0;
+                    img {
+                        max-width: 70%;
+                    }
+                }
+            }
+            .team-members {
+                align-items: center;
+                .core-team,
+                .associates {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .team-card-container {
+                        display: flex;
+                        flex-direction: column;
+                        .team-card {
+                            flex-direction: column;
+                            margin-bottom: 4rem;
+                            .member-image {
+                                margin-bottom: 2rem;
+                                margin-right: 0;
+                            }
+                            .member-detail {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .individual-projects{
+        .content{
+            .project{
+                min-height: 100vh;
+                flex-direction: column;
+                .projects{
+                    width: 270px;
+                    .owl-nav{
+                        display: none;
+                    }
+                }
+                .project-details{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #footer {
+        min-height: 50vh;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        justify-content: space-evenly;
+        .about {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .contact {
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+            .detail {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                .email {
+                    margin-bottom: 1rem;
+                }
+                .contact-detail {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    .copyright {
+        justify-content: center;
+        padding: 0.7rem;
+        font-size: 0.55rem;
+    }
+}

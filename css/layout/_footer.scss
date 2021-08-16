@@ -1,11 +1,14 @@
-#footer {
+/* #footer {
     min-height: 20vh;
     padding: 1rem 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #242429eb;
+    background: $header-grey;
     z-index: -2;
+    .footer-logo {
+        max-width: 70%;
+    }
     .about {
         width: 15%;
         .footer-about-text {
@@ -52,9 +55,77 @@
     color: #000;
     padding: 0.5rem 2rem;
     font-size: 0.7rem;
-    /* background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%); */
+    background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%);
     background: #3c3c3c8a;
     .developer-name {
         color: $base-color-green;
+    }
+} */
+
+#footer {
+    min-height: 30vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: $light-grey;
+    z-index: -2;
+    
+    .about {
+        .company-name {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient( to right, #00d8bd 50%, #92bed3 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        min-height: 15vh;
+        justify-content: space-evenly;
+        .detail {
+            display: flex;
+            i {
+                margin-right: 1rem;
+                margin-bottom: 2rem;
+                &::before {
+                    
+                    padding: 0.5rem;
+                    border-radius: 1rem;
+                }
+            }
+            
+        }
+    }
+    .footer-services {
+        display: flex;
+        flex-direction: column;
+        
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                flex-basis: 50%;
+                margin-bottom: 0.8rem;
+                
+            }
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    padding: 0.4rem 2rem;
+    background: $logo-color;
+    font-size: 0.8rem;
+    .developer-name {
+        color: #000;
     }
 }
