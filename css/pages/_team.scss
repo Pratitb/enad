@@ -1,19 +1,16 @@
 .banner {
     min-height: 45vh;
+    background: url("../../images/team-banner.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 0 150%;
-}
-
-.team-banner {
-    background-image: url("../../images/team-banner.jpg");
 }
 
 #team {
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    
+
     .content {
         width: 70%;
         padding: 5rem 1rem;
@@ -41,7 +38,9 @@
                 margin-right: 3rem;
                 img {
                     border-radius: 1rem;
-                    box-shadow: rgba(96, 154, 92,0.4) -5px 5px, rgba(96, 154, 92,0.3) -10px 10px, rgba(96, 154, 92,0.2) -15px 15px, rgba(96, 154, 92,0.1) -20px 20px, rgba(96, 154, 92,0.05) -25px 25px;
+                    box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px,
+                        rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px,
+                        rgba(96, 154, 92, 0.05) -25px 25px;
                 }
             }
         }
@@ -57,7 +56,9 @@
                     .member-image {
                         margin-right: 1rem;
                         border-radius: 1rem;
-                        box-shadow: rgba(96, 154, 92,0.4) -5px 5px, rgba(96, 154, 92,0.3) -10px 10px, rgba(96, 154, 92,0.2) -15px 15px, rgba(96, 154, 92,0.1) -20px 20px, rgba(96, 154, 92,0.05) -25px 25px;
+                        box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px,
+                            rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px,
+                            rgba(96, 154, 92, 0.05) -25px 25px;
                     }
                 }
             }
