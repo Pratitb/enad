@@ -1,51 +1,53 @@
 #home {
-    width: 65%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    
+    background: rgba(236, 236, 236, 0.6);
+
     .content {
-        
+        width: 60%;
         .about-enad-heading,
         .design-philosophy-heading,
         .core-values-heading,
         .our-services-heading {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
         .core-values-principles {
-            
             .values {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 flex-wrap: wrap;
-                .value {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    flex-basis: 33%;
-                    margin-bottom: 3rem;
-                    .value-name {
-                        font-size: 1.2rem;
+                .value-column {
+                    .value {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        margin-bottom: 1.5rem;
+                        .value-name {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
         }
         .services {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
-            padding: 1rem;
             
-            .service {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                flex-basis: 25%;
-                margin-bottom: 3rem;
-                .service-name {
-                    font-size: 1.2rem;
+            .service-column{
+                .service {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    margin-bottom: 1.5rem;
+                    .service-name {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

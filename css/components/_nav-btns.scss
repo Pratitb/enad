@@ -1,12 +1,17 @@
 .nav-btns{
     display: flex;
+    justify-content: center;
+    margin-top: 5rem;
     .btns{
         padding: 1rem 4rem;
         font-weight: bold;
+        border-radius: 0.8rem;
+        
     }
     .before{
         border: 2px solid $light-grey;
         transition: 0.5s;
+        margin-right: 0.5rem;
         &:hover{
             background: $light-grey;
             

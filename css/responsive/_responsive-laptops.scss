@@ -5,13 +5,26 @@
             height: 100%;
             .slide{
                 .slider-card{
-                    bottom: 8%;
+                    bottom: 6%;
+                    .card-text{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        .owl-nav{
+            button.owl-next, button.owl-prev{
+                span{
+                    height: 4rem;
+                    font-size: 3rem;
+                    padding: 0 0.6rem;
                 }
             }
         }
     }
     #home{
         .content{
+            width: 75%;
             .services{
                 .service{
                     flex-basis: 33%;
@@ -20,8 +33,13 @@
         }
     }
     /* team page */
+    .team-hero{
+        min-height: 50vh;
+        background-position: 50% 30%;
+    }
     #team{
         .content{
+            width: 80%;
             .principal-architect{
                 align-items: flex-start;
             }
@@ -52,9 +70,9 @@
     
     #projects-landing{
         .content{
-            
+            justify-content: flex-start;
             .project-card{
-                flex-basis: 21%;
+                flex-basis: 25%;
                 
                 .project-link{
                     
@@ -70,10 +88,21 @@
         }
     }
     /* projects page */
-    .individual-projects{
-        .sidebar{
-            .sidebar-heading{
-                font-size: 1.8rem;
+
+    #projects{
+        .content{
+            .project{
+                width: 100%;
+                .project-details{
+                    width: 50%;
+                }
+            }
+            .nav-btns{
+                margin-top: 5rem;
+                .btns{
+                    padding: 0.7rem 1rem;
+                    font-size: 0.9rem;
+                }
             }
         }
     }
@@ -89,13 +118,24 @@
             }
         }
         .contact{
+            width: 33%;
             .detail{
                 margin-right: 0;
+                .contact-detail{
+                    font-size: 0.8rem;
+                }
                 
                 
             }
             .address{
                 flex-basis: 30%;
+            }
+        }
+        .footer-services{
+            .links{
+                .shortcut-links{
+                    font-size: 0.8rem;
+                }
             }
         }
     }

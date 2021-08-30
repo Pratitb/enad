@@ -3,13 +3,14 @@
     background: url(../../images/team-hero.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 0 150%;
+    background-position: 50% 25%;
 }
 
 #team {
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    background: $home-content-bg;
 
     .content {
         width: 70%;
@@ -42,15 +43,18 @@
             .team-card-container {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
                 .team-card {
                     display: flex;
                     align-items: center;
+                    flex-basis: 30%;
+                    margin-bottom: 3rem;
                     .member-image {
                         margin-right: 1rem;
                         border-radius: 1rem;
-                        box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px,
+                        /* box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px,
                             rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px,
-                            rgba(96, 154, 92, 0.05) -25px 25px;
+                            rgba(96, 154, 92, 0.05) -25px 25px; */
                     }
                 }
             }

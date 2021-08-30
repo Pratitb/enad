@@ -27,7 +27,7 @@ $(document).ready(function() {
       autoplayTimeout: 4000,
       autoplayHoverPause: true,
       
-      /* nav: true, */
+      nav: true,
       mouseDrag: false,
 
       /* navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], */

@@ -120,6 +120,10 @@ a {
       flex-basis: 21%;
 }
 
+.img-res {
+  max-width: 100%;
+}
+
 .logo-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +152,7 @@ a {
 }
 
 .projects {
-  max-width: 640px;
+  max-width: 360px;
   border-radius: 2rem;
 }
 
@@ -231,17 +235,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
 }
 
 .nav-btns .btns {
   padding: 1rem 4rem;
   font-weight: bold;
+  border-radius: 0.8rem;
 }
 
 .nav-btns .before {
   border: 2px solid #3c3c3c47;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-right: 0.5rem;
 }
 
 .nav-btns .before:hover {
@@ -305,7 +315,7 @@ header .navigation ul {
 
 header .navigation ul li {
   list-style: none;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #5b5b5b;
   padding: 0.1rem 0.5rem;
@@ -319,71 +329,8 @@ header .navigation ul li:hover {
   color: #fff;
 }
 
-/* #footer {
-    min-height: 20vh;
-    padding: 1rem 3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: $header-grey;
-    z-index: -2;
-    .footer-logo {
-        max-width: 70%;
-    }
-    .about {
-        width: 15%;
-        .footer-about-text {
-            color: #fff;
-        }
-        .footer-about {
-            border: 1px solid #fff;
-            border-radius: 1rem;
-            padding: 0.5rem 0.8rem;
-            color: #fff;
-            transition: 0.3s;
-            &:hover {
-                border-radius: 0;
-            }
-        }
-    }
-    .contact {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        width: 85%;
-        .detail {
-            display: flex;
-            margin-right: 3rem;
-            i {
-                
-                &::before {
-                    background: #242429e8;
-                    padding: 0.5rem;
-                    border-radius: 1rem;
-                }
-            }
-            .contact-detail {
-                color: #fff;
-                font-size: 0.9rem;
-            }
-        }
-    }
-}
-
-.copyright {
-    display: flex;
-    justify-content: flex-end;
-    color: #000;
-    padding: 0.5rem 2rem;
-    font-size: 0.7rem;
-    background: linear-gradient( to right, $base-color-green 50%, $base-color-grey 60%);
-    background: #3c3c3c8a;
-    .developer-name {
-        color: $base-color-green;
-    }
-} */
 #footer {
-  min-height: 30vh;
+  min-height: 25vh;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,22 +367,24 @@ header .navigation ul li:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 21%;
 }
 
 #footer .contact .detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#footer .contact .detail i {
-  margin-right: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #footer .contact .detail i::before {
   padding: 0.5rem;
   border-radius: 1rem;
+}
+
+#footer .contact .detail .contact-detail {
+  text-align: justify;
+  font-size: 0.9rem;
 }
 
 #footer .footer-services {
@@ -446,20 +395,37 @@ header .navigation ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
 }
 
 #footer .footer-services .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
-#footer .footer-services .links a {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin-bottom: 0.8rem;
+#footer .footer-services .links .shortcut-links-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer .footer-services .links .shortcut-links {
+  font-size: 0.9rem;
+  -ms-flex-preferred-size: 34%;
+      flex-basis: 34%;
+  margin-bottom: 0.5rem;
 }
 
 .copyright {
@@ -480,7 +446,6 @@ header .navigation ul li:hover {
 }
 
 #home {
-  width: 65%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,27 +458,32 @@ header .navigation ul li:hover {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  background: rgba(236, 236, 236, 0.6);
+}
+
+#home .content {
+  width: 60%;
 }
 
 #home .content .about-enad-heading,
 #home .content .design-philosophy-heading,
 #home .content .core-values-heading,
 #home .content .our-services-heading {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 #home .content .core-values-principles .values {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-#home .content .core-values-principles .values .value {
+#home .content .core-values-principles .values .value-column .value {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,28 +494,25 @@ header .navigation ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-#home .content .core-values-principles .values .value .value-name {
-  font-size: 1.2rem;
+#home .content .core-values-principles .values .value-column .value .value-name {
+  font-size: 1rem;
 }
 
 #home .content .services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1rem;
 }
 
-#home .content .services .service {
+#home .content .services .service-column .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,13 +523,11 @@ header .navigation ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-#home .content .services .service .service-name {
-  font-size: 1.2rem;
+#home .content .services .service-column .service .service-name {
+  font-size: 1rem;
 }
 
 .team-hero {
@@ -570,7 +535,7 @@ header .navigation ul li:hover {
   background: url(../../images/team-hero.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 0 150%;
+  background-position: 50% 25%;
 }
 
 #team {
@@ -581,6 +546,7 @@ header .navigation ul li:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background: rgba(236, 236, 236, 0.6);
 }
 
 #team .content {
@@ -674,6 +640,8 @@ header .navigation ul li:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #team .content .team-members .team-card-container .team-card {
@@ -683,13 +651,17 @@ header .navigation ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin-bottom: 3rem;
 }
 
 #team .content .team-members .team-card-container .team-card .member-image {
   margin-right: 1rem;
   border-radius: 1rem;
-  -webkit-box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px, rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px, rgba(96, 154, 92, 0.05) -25px 25px;
-          box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px, rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px, rgba(96, 154, 92, 0.05) -25px 25px;
+  /* box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px,
+                            rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px,
+                            rgba(96, 154, 92, 0.05) -25px 25px; */
 }
 
 #projects-landing {
@@ -699,16 +671,17 @@ header .navigation ul li:hover {
 }
 
 #projects-landing .content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 5rem 2rem;
+  padding: 0;
 }
 
 #projects-landing .content .project-card {
@@ -744,7 +717,6 @@ header .navigation ul li:hover {
 }
 
 #projects-landing .content .project-card .project-link img {
-  max-width: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -788,8 +760,13 @@ header .navigation ul li:hover {
   z-index: 2;
 }
 
-.content .project {
-  min-height: 50vh;
+#projects {
+  background: rgba(236, 236, 236, 0.6);
+}
+
+#projects .content .project {
+  min-height: 40vh;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,15 +776,20 @@ header .navigation ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
-.content .project .project-details {
+#projects .content .project .project-details {
   width: 40%;
-  line-height: 1.7rem;
+  line-height: 1.3rem;
+}
+
+#projects .content .project .project-details .project-text {
+  font-size: 0.85rem;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   color: black;
 }
 
@@ -828,12 +810,14 @@ header .navigation ul li:hover {
   top: 40%;
   left: 3%;
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .home-slider .owl-nav button.owl-prev span {
-  padding: 0.2rem 1rem;
-  font-size: 2rem;
+  display: inline-block;
+  height: 7rem;
+  padding: 0rem 1rem;
+  font-size: 5rem;
 }
 
 .home-slider .owl-nav button.owl-next {
@@ -841,15 +825,20 @@ header .navigation ul li:hover {
   top: 40%;
   right: 3%;
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .home-slider .owl-nav button.owl-next span {
-  padding: 0.2rem 1rem;
-  font-size: 2rem;
+  display: inline-block;
+  height: 7rem;
+  padding: 0rem 1rem;
+  font-size: 5rem;
 }
 
 .home-slider .owl-dots {
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
   margin-top: 1rem;
 }
 
@@ -867,8 +856,8 @@ header .navigation ul li:hover {
 
 .home-slider .owl-item .slide .slider-card {
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  bottom: 2%;
+  right: 1%;
   width: auto;
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.8);
@@ -879,21 +868,7 @@ header .navigation ul li:hover {
 }
 
 .home-slider .owl-item .slide .slider-card .card-text {
-  font-size: 0.9rem;
-}
-
-.home-slider .owl-item .slide .slider-card .slider-card-btn {
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  background: #455a64;
-  border-radius: 1rem;
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.home-slider .owl-item .slide .slider-card .slider-card-btn:hover {
-  border-radius: 0;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -902,13 +877,31 @@ header .navigation ul li:hover {
     height: 100%;
   }
   .home-slider .owl-item .slide .slider-card {
-    bottom: 8%;
+    bottom: 6%;
+  }
+  .home-slider .owl-item .slide .slider-card .card-text {
+    font-size: 0.7rem;
+  }
+  .home-slider .owl-nav button.owl-next span, .home-slider .owl-nav button.owl-prev span {
+    height: 4rem;
+    font-size: 3rem;
+    padding: 0 0.6rem;
+  }
+  #home .content {
+    width: 75%;
   }
   #home .content .services .service {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
   }
   /* team page */
+  .team-hero {
+    min-height: 50vh;
+    background-position: 50% 30%;
+  }
+  #team .content {
+    width: 80%;
+  }
   #team .content .principal-architect {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -928,9 +921,14 @@ header .navigation ul li:hover {
   .logo {
     max-width: 70%;
   }
+  #projects-landing .content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   #projects-landing .content .project-card {
-    -ms-flex-preferred-size: 21%;
-        flex-basis: 21%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
   #projects-landing .content .project-card .project-link .title-block {
     width: 70%;
@@ -939,8 +937,18 @@ header .navigation ul li:hover {
     font-size: 1rem;
   }
   /* projects page */
-  .individual-projects .sidebar .sidebar-heading {
-    font-size: 1.8rem;
+  #projects .content .project {
+    width: 100%;
+  }
+  #projects .content .project .project-details {
+    width: 50%;
+  }
+  #projects .content .nav-btns {
+    margin-top: 5rem;
+  }
+  #projects .content .nav-btns .btns {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
   }
   .projects {
     width: 450px;
@@ -952,12 +960,21 @@ header .navigation ul li:hover {
   #footer .about .footer-logo {
     max-width: 80%;
   }
+  #footer .contact {
+    width: 33%;
+  }
   #footer .contact .detail {
     margin-right: 0;
+  }
+  #footer .contact .detail .contact-detail {
+    font-size: 0.8rem;
   }
   #footer .contact .address {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
+  }
+  #footer .footer-services .links .shortcut-links {
+    font-size: 0.8rem;
   }
 }
 
@@ -1143,39 +1160,6 @@ header .navigation ul li:hover {
             justify-content: center;
     padding: 0.7rem;
     font-size: 0.55rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 390px) {
-  #home,
-  #team,
-  #projects-landing {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #home .sidebar,
-  #team .sidebar,
-  #projects-landing .sidebar {
-    width: 100%;
-    padding: 1rem;
-  }
-  #home .sidebar .sidebar-heading,
-  #team .sidebar .sidebar-heading,
-  #projects-landing .sidebar .sidebar-heading {
-    font-size: 2rem;
-    text-align: center;
-  }
-  #home .content,
-  #team .content,
-  #projects-landing .content {
-    width: 100%;
-    padding: 2rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

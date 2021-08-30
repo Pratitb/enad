@@ -88,6 +88,9 @@
 .address {
     flex-basis: 21%;
 }
+.img-res{
+    max-width: 100%;
+}
 
 .logo-link {
     display: flex;
@@ -108,7 +111,7 @@
 }
 
 .projects {
-    max-width: 640px;
+    max-width: 360px;
     
     border-radius: 2rem;
     .owl-stage-outer {
