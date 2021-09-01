@@ -1,24 +1,24 @@
-#projects{
+#projects {
     background: $home-content-bg;
-    .content{
-        
-        
-        .project{
-            min-height: 40vh;
-            width: 80%;
+    .content {
+        .projects{
+            margin-right: 2rem;
+        }
+        .project {
+            min-height: 35vh;
+
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-            margin: 0 auto;
-    
-            .project-details{
+            
+
+            .project-details {
                 width: 40%;
                 line-height: 1.3rem;
-                .project-text{
+                .project-text {
                     font-size: 0.85rem;
                 }
             }
         }
-        
     }
 }
