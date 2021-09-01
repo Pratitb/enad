@@ -769,7 +769,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project {
-  min-height: 40vh;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,7 +946,7 @@ header .navigation ul li:hover {
             justify-content: center;
   }
   #projects .content .project .project-details {
-    width: 42%;
+    width: 45%;
   }
   #projects .content .nav-btns {
     margin-top: 5rem;
