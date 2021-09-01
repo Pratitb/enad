@@ -769,7 +769,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project {
-  min-height: 50vh;
+  min-height: 47vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
