@@ -69,6 +69,14 @@ a {
   margin-right: 2rem;
 }
 
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.sub-text {
+  font-size: 0.9rem;
+}
+
 .tj {
   text-align: justify;
 }
@@ -115,9 +123,8 @@ a {
   border-bottom-right-radius: 1rem;
 }
 
-.address {
-  -ms-flex-preferred-size: 21%;
-      flex-basis: 21%;
+.txt-und {
+  text-decoration: underline !important;
 }
 
 .img-res {
@@ -330,8 +337,20 @@ header .navigation ul li:hover {
 }
 
 #footer {
-  min-height: 25vh;
-  padding: 2rem;
+  min-height: 20vh;
+  padding: 4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3c3c3c47;
+  z-index: -2;
+}
+
+#footer .main-footer-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,21 +360,9 @@ header .navigation ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #3c3c3c47;
-  z-index: -2;
 }
 
-#footer .about .company-name {
-  font-size: 2rem;
-  font-weight: 700;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #00d8bd), color-stop(50%, #92bed3));
-  background: linear-gradient(to right, #00d8bd 50%, #92bed3 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#footer .contact {
+#footer .main-footer-one .main-footer-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,26 +370,51 @@ header .navigation ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 15vh;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 21%;
 }
 
-#footer .contact .detail {
+#footer .main-footer-one .main-footer-two .main-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .main-footer-one .main-footer-two .main-contact .address {
+  width: 43%;
+}
+
+#footer .main-footer-one .main-footer-two .main-contact .address .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.3rem;
+}
+
+#footer .main-footer-one .main-footer-two .main-contact .address .detail .contact-detail {
+  font-size: 0.85rem;
+}
+
+#footer .main-footer-one .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 12vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#footer .main-footer-one .contact .detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
 }
 
-#footer .contact .detail i::before {
-  padding: 0.5rem;
-  border-radius: 1rem;
-}
-
-#footer .contact .detail .contact-detail {
+#footer .main-footer-one .contact .detail .contact-detail {
   text-align: justify;
   font-size: 0.9rem;
 }
@@ -391,41 +423,29 @@ header .navigation ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 15rem;
 }
 
 #footer .footer-services .links {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .footer-services .links .shortcut-links-column {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
-}
-
-#footer .footer-services .links .shortcut-links-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #footer .footer-services .links .shortcut-links {
   font-size: 0.9rem;
-  -ms-flex-preferred-size: 34%;
-      flex-basis: 34%;
-  margin-bottom: 0.5rem;
+  padding: 0 1rem 0;
+  border-right: 1px solid;
 }
 
 .copyright {
@@ -463,6 +483,11 @@ header .navigation ul li:hover {
 
 #home .content {
   width: 60%;
+}
+
+#home .content .about-enad, #home .content .design-philosophy {
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 #home .content .about-enad-heading,
@@ -531,11 +556,11 @@ header .navigation ul li:hover {
 }
 
 .team-hero {
-  min-height: 45vh;
+  min-height: 55vh;
   background: url(../../images/team-hero.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: center;
 }
 
 #team {
@@ -596,7 +621,7 @@ header .navigation ul li:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 
 #team .content .principal-architect .principal-architect-content .highlight-color {
@@ -681,7 +706,7 @@ header .navigation ul li:hover {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0 5.5rem 0;
 }
 
 #projects-landing .content .project-card {
@@ -769,7 +794,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project {
-  min-height: 45vh;
+  min-height: 43vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -899,10 +924,13 @@ header .navigation ul li:hover {
   /* team page */
   .team-hero {
     min-height: 50vh;
-    background-position: 50% 30%;
+    background: url(../../images/team-hero-resp.jpg);
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   #team .content {
-    width: 80%;
+    width: 65%;
   }
   #team .content .principal-architect {
     -webkit-box-align: start;
@@ -961,7 +989,16 @@ header .navigation ul li:hover {
   }
   /* common footer for pages in this range */
   #footer {
-    padding: 1rem;
+    padding: 2rem;
+  }
+  #footer .about {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #footer .about .footer-logo {
     max-width: 80%;
@@ -980,7 +1017,7 @@ header .navigation ul li:hover {
         flex-basis: 30%;
   }
   #footer .footer-services .links .shortcut-links {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
 

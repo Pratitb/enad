@@ -1,9 +1,9 @@
 .team-hero {
-    min-height: 45vh;
+    min-height: 55vh;
     background: url(../../images/team-hero.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50% 25%;
+    background-position: center;
 }
 
 #team {
@@ -18,7 +18,7 @@
         .principal-architect {
             display: flex;
             justify-content: flex-start;
-            padding: 2rem 0;
+            padding: 5rem 0;
             .principal-architect-content {
                 .highlight-color {
                     color: $base-color-green;

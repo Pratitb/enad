@@ -1,61 +1,67 @@
 #footer {
-    min-height: 25vh;
-    padding: 2rem;
+    min-height: 20vh;
+    padding: 4rem 2rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
     background: $light-grey;
     z-index: -2;
 
-    .about {
-        .company-name {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(to right, #00d8bd 50%, #92bed3 50%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-    .contact {
+    .main-footer-one {
         display: flex;
-        flex-direction: column;
-        min-height: 15vh;
         justify-content: space-evenly;
-        width: 21%;
-        .detail {
+        align-items: center;
+
+        .main-footer-two {
             display: flex;
-            margin-bottom: 1rem;
-            i {
-                &::before {
-                    padding: 0.5rem;
-                    border-radius: 1rem;
+            flex-direction: column;
+            .main-contact {
+                display: flex;
+                
+                .address {
+                    width: 43%;
+                    .detail {
+                        display: flex;
+                        line-height: 1.3rem;
+                        .contact-detail {
+                            font-size: 0.85rem;
+                        }
+                    }
                 }
             }
-            .contact-detail {
-                text-align: justify;
-                font-size: 0.9rem;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            min-height: 12vh;
+            justify-content: flex-start;
+
+            .detail {
+                display: flex;
+                margin-bottom: 1rem;
+                
+                .contact-detail {
+                    text-align: justify;
+                    font-size: 0.9rem;
+                }
             }
         }
     }
     .footer-services {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 15rem;
 
         .links {
+            width: 80%;
             display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            .shortcut-links-column{
+
+            .shortcut-links-column {
+                width: 80%;
                 display: flex;
-                flex-direction: column;
+                justify-content: space-evenly;
             }
             .shortcut-links {
                 font-size: 0.9rem;
-                flex-basis: 34%;
-                margin-bottom: 0.5rem;
+                padding: 0 1rem 0;
+                border-right: 1px solid;
             }
         }
     }

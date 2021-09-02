@@ -33,13 +33,16 @@
         }
     }
     /* team page */
-    .team-hero{
+    .team-hero {
         min-height: 50vh;
-        background-position: 50% 30%;
+        background: url(../../images/team-hero-resp.jpg);
+        background-attachment: unset;
+        background-repeat: no-repeat;
+        background-position:center;
     }
     #team{
         .content{
-            width: 80%;
+            width: 65%;
             .principal-architect{
                 align-items: flex-start;
             }
@@ -113,8 +116,11 @@
     }
     /* common footer for pages in this range */
     #footer{
-        padding: 1rem;
+        padding: 2rem;
         .about{
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
             .footer-logo{
                 max-width: 80%;
             }
@@ -136,7 +142,7 @@
         .footer-services{
             .links{
                 .shortcut-links{
-                    font-size: 0.8rem;
+                    font-size: 0.85rem;
                 }
             }
         }
