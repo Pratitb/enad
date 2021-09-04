@@ -379,7 +379,7 @@ header .navigation ul li:hover {
 }
 
 #footer .main-footer-one .main-footer-two .main-contact .address {
-  width: 43%;
+  width: 53%;
 }
 
 #footer .main-footer-one .main-footer-two .main-contact .address .detail {
@@ -433,7 +433,7 @@ header .navigation ul li:hover {
 }
 
 #footer .footer-services .links .shortcut-links-column {
-  width: 80%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,7 +560,7 @@ header .navigation ul li:hover {
   background: url(../../images/team-hero.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
 }
 
 #team {
@@ -706,7 +706,7 @@ header .navigation ul li:hover {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 0 5.5rem 0;
+  padding: 0;
 }
 
 #projects-landing .content .project-card {
@@ -728,7 +728,7 @@ header .navigation ul li:hover {
 }
 
 #projects-landing .content .project-card .project-link .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -765,7 +765,14 @@ header .navigation ul li:hover {
 }
 
 #projects-landing .content .project-card .project-link .title-block .title {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 0.5rem;
+  color: #fff;
 }
 
 #projects-landing .content .project-card:hover img {
@@ -787,6 +794,42 @@ header .navigation ul li:hover {
 
 #projects {
   background: rgba(236, 236, 236, 0.6);
+}
+
+#projects .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 4rem 0;
+}
+
+#projects .content .project-heading-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 30vh;
+  margin-bottom: 5rem;
+  background-color: #ececec;
+  background-attachment: fixed;
+  opacity: 0.7;
+  background: radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#609a5c 1.2px, transparent 1.2px) 0 -0.6px, linear-gradient(90deg, #609a5c 1.2px, #ececec 1.2px) -0.6px 0;
+  background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+}
+
+#projects .content .project-heading-box .project-heading {
+  font-size: 3rem;
+  margin: 3rem;
 }
 
 #projects .content .projects {
