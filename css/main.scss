@@ -4,6 +4,7 @@
 
 @import "components/sidebar";
 @import "components/content";
+@import "components/mobile-menu";
 @import "components/nav-btns";
 @import "layout/pre-header";
 @import "layout/header";
@@ -87,5 +88,7 @@
     }
 }
 
+
+@import "responsive/responsive-mobiles-01";
+@import "responsive/responsive-mobiles-02";
 @import "responsive/responsive-laptops";
-@import "responsive/responsive-mobiles";
