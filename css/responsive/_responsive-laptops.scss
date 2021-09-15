@@ -1,7 +1,7 @@
 @media (min-width: 1200px) and (max-width: 1899px) {
     .pre-header{
         .pre-header-text{
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     }
     /* home page */
@@ -32,8 +32,8 @@
         .content {
             width: 75%;
             .about-enad,
-            .design-philosophy {
-                line-height: 1.5rem;
+            .design-philosophy, .core-values-principles, .our-services {
+                font-size: 0.9rem;
             }
             .services {
                 .service {
@@ -52,14 +52,18 @@
     }
     #team {
         .content {
-            width: 80%;
+            padding: 5rem 1rem 1rem;
+            width: 65%;
             .about-enad {
-                line-height: 1.5rem;
+                font-size: 0.9rem;
+                line-height: 1.3rem;
             }
             .principal-architect {
                 align-items: flex-start;
+                padding: 5rem 0 4rem;
                 .principal-architect-content {
-                    line-height: 1.5rem;
+                    font-size: 0.9rem;
+                    line-height: 1.3rem;
                 }
             }
             .team-members {
@@ -110,7 +114,7 @@
     #projects {
         .content {
             .project {
-                min-height: 37vh;
+                min-height: 42vh;
                 width: 100%;
                 justify-content: center;
                 .project-details {
@@ -132,13 +136,16 @@
     }
     /* common footer for pages in this range */
     #footer {
-        padding: 2rem;
-        .about {
-            width: 30%;
-            display: flex;
-            justify-content: flex-start;
-            .footer-logo {
-                max-width: 80%;
+        padding: 2rem 2rem 0;
+        min-height: 18vh;
+        .main-footer-one{
+            .about {
+                width: 25%;
+                display: flex;
+                justify-content: space-evenly;
+                .footer-logo {
+                    max-width: 80%;
+                }
             }
         }
         .contact {

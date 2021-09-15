@@ -1,6 +1,6 @@
 #footer {
-    min-height: 20vh;
-    padding: 4rem 2rem;
+    min-height: 15vh;
+    padding: 2rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     background: $light-grey;
@@ -8,17 +8,26 @@
 
     .main-footer-one {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            .logo-link {
+                justify-content: flex-start;
+            }
+        }
 
         .main-footer-two {
             display: flex;
             flex-direction: column;
             .main-contact {
                 display: flex;
-                
+
                 .address {
-                    width: 53%;
+                    width: 45%;
                     .detail {
                         display: flex;
                         line-height: 1.3rem;
@@ -38,7 +47,7 @@
             .detail {
                 display: flex;
                 margin-bottom: 1rem;
-                
+
                 .contact-detail {
                     text-align: justify;
                     font-size: 0.9rem;
@@ -46,23 +55,24 @@
             }
         }
     }
-    .footer-services {
+}
+.footer-services {
+    display: flex;
+    justify-content: space-evenly;
+    background: $light-grey;
+    padding: 1rem 2rem;
+
+    .links {
         display: flex;
 
-        .links {
-            width: 80%;
+        .shortcut-links-column {
             display: flex;
-
-            .shortcut-links-column {
-                
-                display: flex;
-                justify-content: space-evenly;
-            }
-            .shortcut-links {
-                font-size: 0.9rem;
-                padding: 0 1rem 0;
-                border-right: 1px solid;
-            }
+            justify-content: space-evenly;
+        }
+        .shortcut-links {
+            font-size: 0.9rem;
+            padding: 0 1rem 0;
+            border-right: 1px solid;
         }
     }
 }

@@ -90,3 +90,4 @@
 [0913/164323.374:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0914/120252.291:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0914/213949.534:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0915/193726.670:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.

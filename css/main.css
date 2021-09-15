@@ -380,8 +380,8 @@ header .navigation ul li:hover {
 }
 
 #footer {
-  min-height: 20vh;
-  padding: 4rem 2rem;
+  min-height: 15vh;
+  padding: 2rem 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,12 +397,31 @@ header .navigation ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#footer .main-footer-one .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+}
+
+#footer .main-footer-one .about .logo-link {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #footer .main-footer-one .main-footer-two {
@@ -422,7 +441,7 @@ header .navigation ul li:hover {
 }
 
 #footer .main-footer-one .main-footer-two .main-contact .address {
-  width: 53%;
+  width: 45%;
 }
 
 #footer .main-footer-one .main-footer-two .main-contact .address .detail {
@@ -462,20 +481,24 @@ header .navigation ul li:hover {
   font-size: 0.9rem;
 }
 
-#footer .footer-services {
+.footer-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #3c3c3c47;
+  padding: 1rem 2rem;
+}
+
+.footer-services .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#footer .footer-services .links {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#footer .footer-services .links .shortcut-links-column {
+.footer-services .links .shortcut-links-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,7 +507,7 @@ header .navigation ul li:hover {
           justify-content: space-evenly;
 }
 
-#footer .footer-services .links .shortcut-links {
+.footer-services .links .shortcut-links {
   font-size: 0.9rem;
   padding: 0 1rem 0;
   border-right: 1px solid;
@@ -525,6 +548,7 @@ header .navigation ul li:hover {
 
 #home .content {
   width: 60%;
+  padding: 4rem 4rem 0rem;
 }
 
 #home .content .about-enad, #home .content .design-philosophy {
@@ -532,11 +556,19 @@ header .navigation ul li:hover {
   line-height: 1.3rem;
 }
 
+#home .content .about-enad, #home .content .design-philosophy, #home .content .our-services {
+  margin-bottom: 3rem;
+}
+
 #home .content .about-enad-heading,
 #home .content .design-philosophy-heading,
 #home .content .core-values-heading,
 #home .content .our-services-heading {
   font-size: 1.5rem;
+}
+
+#home .content .core-values-principles {
+  margin-bottom: 2rem;
 }
 
 #home .content .core-values-principles .values {
@@ -851,14 +883,15 @@ header .navigation ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 30vh;
+  min-height: 12vh;
+  padding-left: 15%;
   margin-bottom: 5rem;
   background-color: #ececec;
   background-attachment: fixed;
@@ -868,8 +901,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project-heading-box .project-heading {
-  font-size: 3rem;
-  margin: 3rem;
+  font-size: 2.5rem;
 }
 
 #projects .content .projects {
@@ -1369,7 +1401,7 @@ header .navigation ul li:hover {
 
 @media (min-width: 1200px) and (max-width: 1899px) {
   .pre-header .pre-header-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   /* home page */
   .home-slider .owl-item {
@@ -1391,8 +1423,8 @@ header .navigation ul li:hover {
     width: 75%;
   }
   #home .content .about-enad,
-  #home .content .design-philosophy {
-    line-height: 1.5rem;
+  #home .content .design-philosophy, #home .content .core-values-principles, #home .content .our-services {
+    font-size: 0.9rem;
   }
   #home .content .services .service {
     -ms-flex-preferred-size: 33%;
@@ -1407,18 +1439,22 @@ header .navigation ul li:hover {
     background-position: center;
   }
   #team .content {
-    width: 80%;
+    padding: 5rem 1rem 1rem;
+    width: 65%;
   }
   #team .content .about-enad {
-    line-height: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
   #team .content .principal-architect {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 5rem 0 4rem;
   }
   #team .content .principal-architect .principal-architect-content {
-    line-height: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
   #team .content .team-members .team-card-container .team-card .member-image {
     max-width: 45%;
@@ -1451,7 +1487,7 @@ header .navigation ul li:hover {
   }
   /* projects page */
   #projects .content .project {
-    min-height: 37vh;
+    min-height: 42vh;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1473,18 +1509,19 @@ header .navigation ul li:hover {
   }
   /* common footer for pages in this range */
   #footer {
-    padding: 2rem;
+    padding: 2rem 2rem 0;
+    min-height: 18vh;
   }
-  #footer .about {
-    width: 30%;
+  #footer .main-footer-one .about {
+    width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  #footer .about .footer-logo {
+  #footer .main-footer-one .about .footer-logo {
     max-width: 80%;
   }
   #footer .contact {

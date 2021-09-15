@@ -8,18 +8,24 @@
 
     .content {
         width: 60%;
+        padding: 4rem 4rem 0rem;
         .about-enad, .design-philosophy{
             font-size: 1rem;
             line-height: 1.3rem;
 
+        }
+        .about-enad, .design-philosophy, .our-services{
+            margin-bottom: 3rem;
         }
         .about-enad-heading,
         .design-philosophy-heading,
         .core-values-heading,
         .our-services-heading {
             font-size: 1.5rem;
+            
         }
         .core-values-principles {
+            margin-bottom: 2rem;
             .values {
                 display: flex;
                 justify-content: space-between;

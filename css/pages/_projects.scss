@@ -8,10 +8,11 @@
         padding: 0 0 4rem 0;
         .project-heading-box {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             width: 100%;
-            min-height: 30vh;
+            min-height: 12vh;
+            padding-left: 15%;
             margin-bottom: 5rem;
             background-color: #ececec;
             background-attachment: fixed;
@@ -24,8 +25,8 @@
                     0;
             background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
             .project-heading {
-                font-size: 3rem;
-                margin: 3rem;
+                font-size: 2.5rem;
+                
             }
         }
         .projects {
