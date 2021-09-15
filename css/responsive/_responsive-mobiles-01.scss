@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 450px) {
     .pre-header {
         .pre-header-text {
             font-size: 0.7rem;
@@ -15,6 +15,9 @@
         .navigation {
             display: none;
         }
+    }
+    .logo-link{
+        justify-content: flex-start;
     }
     .home-slider {
         width: 100%;
@@ -53,6 +56,9 @@
                 font-size: 1.3rem;
                 margin-bottom: 1rem;
             }
+            .about-enad, .design-philosophy, .core-values-principles .values .value-column .value .value-name, .services .service-column .service .service-name{
+                font-size: 0.9rem;
+            }
             .core-values-principles {
                 .values {
                     flex-direction: column;
@@ -78,6 +84,9 @@
                 font-size: 1.3rem;
                 margin-bottom: 1rem;
             }
+            .about-enad, .principal-architect-content{
+                font-size: 0.9rem;
+            }
             .principal-architect {
                 flex-direction: column;
 
@@ -86,7 +95,7 @@
                     align-items: center;
                     margin: 0 0 3rem 0;
                     img {
-                        max-width: 70%;
+                        max-width: 90%;
                     }
                 }
                 .principal-architect-content {
@@ -131,7 +140,7 @@
                         opacity: 0;
                     }
                     img {
-                        max-width: 300px;
+                        max-width: 250px;
                     }
                     .title-block {
                         opacity: 1;
@@ -160,9 +169,9 @@
             }
             .project {
                 flex-direction: column;
-                padding: 4rem 2rem;
+                padding: 2rem 2rem;
                 .projects {
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                     margin-right: 0;
                 }
                 .project-details {
@@ -199,6 +208,9 @@
                 .detail {
                     flex-direction: column;
                     flex-wrap: wrap;
+                    .contact-detail{
+                        font-size: 0.8rem;
+                    }
                 }
             }
             .main-footer-two {
@@ -215,6 +227,11 @@
                     }
                     .address {
                         width: 100%;
+                        .detail{
+                            .contact-detail{
+                                font-size: 0.8rem;
+                            }
+                        }
                     }
                 }
             }
@@ -242,6 +259,7 @@
                     align-items: center;
 
                     .shortcut-links {
+                        font-size: 0.8rem;
                         text-align: center;
                         flex-basis: 30%;
                         margin-bottom: 0.5rem;

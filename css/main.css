@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -12,8 +11,7 @@ html {
 }
 
 body {
-  /* font-family: 'Crimson Text', serif; */
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 a {
@@ -478,7 +476,6 @@ header .navigation ul li:hover {
 }
 
 #footer .footer-services .links .shortcut-links-column {
-  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,7 +602,7 @@ header .navigation ul li:hover {
   background: url(../../images/team-hero.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 32%;
 }
 
 #team {
@@ -689,8 +686,6 @@ header .navigation ul li:hover {
 
 #team .content .principal-architect .principal-architect-image img {
   border-radius: 1rem;
-  -webkit-box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px, rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px, rgba(96, 154, 92, 0.05) -25px 25px;
-          box-shadow: rgba(96, 154, 92, 0.4) -5px 5px, rgba(96, 154, 92, 0.3) -10px 10px, rgba(96, 154, 92, 0.2) -15px 15px, rgba(96, 154, 92, 0.1) -20px 20px, rgba(96, 154, 92, 0.05) -25px 25px;
 }
 
 #team .content .team-members {
@@ -751,7 +746,7 @@ header .navigation ul li:hover {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0 6rem 0;
 }
 
 #projects-landing .content .project-card {
@@ -882,7 +877,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project {
-  min-height: 41vh;
+  min-height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,7 +895,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project .project-details .project-text {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -986,7 +981,13 @@ header .navigation ul li:hover {
   font-size: 0.8rem;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
   .pre-header .pre-header-text {
     font-size: 0.7rem;
   }
@@ -999,6 +1000,11 @@ header .navigation ul li:hover {
   }
   header .navigation {
     display: none;
+  }
+  .logo-link {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .home-slider {
     width: 100%;
@@ -1035,6 +1041,9 @@ header .navigation ul li:hover {
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
+  #home .content .about-enad, #home .content .design-philosophy, #home .content .core-values-principles .values .value-column .value .value-name, #home .content .services .service-column .service .service-name {
+    font-size: 0.9rem;
+  }
   #home .content .core-values-principles .values {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1061,6 +1070,9 @@ header .navigation ul li:hover {
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
+  #team .content .about-enad, #team .content .principal-architect-content {
+    font-size: 0.9rem;
+  }
   #team .content .principal-architect {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1077,7 +1089,7 @@ header .navigation ul li:hover {
     margin: 0 0 3rem 0;
   }
   #team .content .principal-architect .principal-architect-image img {
-    max-width: 70%;
+    max-width: 90%;
   }
   #team .content .principal-architect .principal-architect-content {
     line-height: 1.5rem;
@@ -1145,7 +1157,7 @@ header .navigation ul li:hover {
     opacity: 0;
   }
   #projects-landing .content .project-card .project-link img {
-    max-width: 300px;
+    max-width: 250px;
   }
   #projects-landing .content .project-card .project-link .title-block {
     opacity: 1;
@@ -1175,10 +1187,10 @@ header .navigation ul li:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
   #projects .content .project .projects {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-right: 0;
   }
   #projects .content .project .project-details {
@@ -1230,6 +1242,9 @@ header .navigation ul li:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  #footer .main-footer-one .contact .detail .contact-detail {
+    font-size: 0.8rem;
+  }
   #footer .main-footer-one .main-footer-two {
     width: 100%;
   }
@@ -1252,6 +1267,9 @@ header .navigation ul li:hover {
   }
   #footer .main-footer-one .main-footer-two .main-contact .address {
     width: 100%;
+  }
+  #footer .main-footer-one .main-footer-two .main-contact .address .detail .contact-detail {
+    font-size: 0.8rem;
   }
   #footer .footer-services {
     -webkit-box-orient: horizontal;
@@ -1294,6 +1312,7 @@ header .navigation ul li:hover {
             align-items: center;
   }
   #footer .footer-services .links .shortcut-links-column .shortcut-links {
+    font-size: 0.8rem;
     text-align: center;
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
@@ -1310,350 +1329,70 @@ header .navigation ul li:hover {
   }
 }
 
-@media (min-width: 390px) and (max-width: 430px) {
-  .pre-header .pre-header-text {
-    font-size: 0.8rem;
-  }
-  .fas,
-  .far {
-    font-size: 1.2rem;
-  }
-  header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header .logo {
-    max-width: 70%;
-  }
-  header .navigation {
-    display: none;
-  }
-  .home-slider {
-    width: 100%;
-    margin: 0;
-  }
-  .home-slider .owl-item {
-    height: 100%;
-  }
-  .home-slider .owl-item .slide .slider-card {
-    display: none;
-    /* width: 150px;
-                    padding: 0.4rem;
-                    bottom: 10%;
-                    .card-text {
-                        font-size: 0.45rem;
-                    } */
-  }
-  .home-slider .owl-nav {
-    display: none;
-  }
+@media (min-width: 376px) and (max-width: 430px) {
   .home-slider .owl-dots {
-    left: 30%;
-    bottom: 0;
+    left: 33%;
   }
-  .home-slider .owl-dots button.owl-dot {
-    zoom: 0.6;
-  }
-  /* home page */
-  #home .content {
-    width: 100%;
-    padding: 3rem 2rem;
-  }
-  #home .content .content-heading {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-  }
-  #home .content .core-values-principles .values {
-    -webkit-box-orient: vertical;
+  #team .content .team-members .core-team .team-card-container, #team .content .team-members .associates .team-card-container {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  #home .content .services {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  #team .content .team-members .core-team .team-card-container .team-card .member-detail, #team .content .team-members .associates .team-card-container .team-card .member-detail {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  /* team page */
-  .team-hero {
-    background: url(../../images/team-hero-mob-01.jpg);
-    min-height: 30vh;
-    background-position: center;
-  }
-  #team .content {
-    width: 100%;
-    padding: 4rem 2rem;
-  }
-  #team .content .content-heading {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-  }
-  #team .content .principal-architect {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #team .content .principal-architect .principal-architect-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 0 3rem 0;
-  }
-  #team .content .principal-architect .principal-architect-image img {
-    max-width: 70%;
-  }
-  #team .content .principal-architect .principal-architect-content {
-    line-height: 1.5rem;
-  }
-  #team .content .team-members {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #team .content .team-members .core-team,
-  #team .content .team-members .associates {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 2rem;
-  }
-  #team .content .team-members .core-team .team-card-container,
-  #team .content .team-members .associates .team-card-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #team .content .team-members .core-team .team-card-container .team-card,
-  #team .content .team-members .associates .team-card-container .team-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 4rem;
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-  }
-  #team .content .team-members .core-team .team-card-container .team-card .member-image,
-  #team .content .team-members .associates .team-card-container .team-card .member-image {
-    margin-bottom: 2rem;
-    margin-right: 0;
-  }
-  #team .content .team-members .core-team .team-card-container .team-card .member-detail,
-  #team .content .team-members .associates .team-card-container .team-card .member-detail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #projects-landing .content .project-card {
-    padding: 1rem;
-  }
-  #projects-landing .content .project-card .project-link .overlay {
-    opacity: 0;
+  #projects-landing .content {
+    padding: 0 0 3rem 0;
   }
   #projects-landing .content .project-card .project-link img {
-    max-width: 350px;
-  }
-  #projects-landing .content .project-card .project-link .title-block {
-    opacity: 1;
+    max-width: 155px;
   }
   #projects-landing .content .project-card .project-link .title-block .title {
-    font-size: 1rem;
-    padding: 0.5rem;
-    background: rgba(0, 0, 0, 0.8);
+    font-size: 0.6rem;
   }
-  #projects .content .project-heading-box {
-    min-height: 20vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 0;
-  }
-  #projects .content .project-heading-box .project-heading {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 1rem;
-  }
-  #projects .content .project {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 4rem 2rem;
-  }
-  #projects .content .project .projects {
-    margin-bottom: 2rem;
-    margin-right: 0;
-  }
-  #projects .content .project .project-details {
-    text-align: left;
-    width: 100%;
-  }
-  #projects .content .project .project-details .project-text {
-    text-align: justify;
+  #footer .main-footer-one .contact .detail .contact-detail {
     font-size: 0.9rem;
   }
-  #projects .content .nav-btns {
-    margin: 0;
-  }
-  #projects .content .nav-btns .btns {
+  #footer .main-footer-one .main-footer-two .main-contact .address .detail .contact-detail {
     font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-  #footer {
-    min-height: 45vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1rem 2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #footer .main-footer-one {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #footer .main-footer-one .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 2rem;
-  }
-  #footer .main-footer-one .contact .detail {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #footer .main-footer-one .main-footer-two {
-    width: 100%;
-  }
-  #footer .main-footer-one .main-footer-two .main-contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  #footer .main-footer-one .main-footer-two .main-contact .contact {
-    margin: 0;
-    min-height: 8vh;
-  }
-  #footer .main-footer-one .main-footer-two .main-contact .contact .detail {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #footer .main-footer-one .main-footer-two .main-contact .address {
-    width: 100%;
-  }
-  #footer .footer-services {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #footer .footer-services h4 {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-  #footer .footer-services .links {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #footer .footer-services .links .shortcut-links-column {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   #footer .footer-services .links .shortcut-links-column .shortcut-links {
-    text-align: center;
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    margin-bottom: 0.5rem;
-    border: 0;
-    padding: 0;
+    font-size: 0.9rem;
   }
-  .copyright {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem;
-    font-size: 0.7rem;
+  .mobile-menu .menu-link .material-icons {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1899px) {
+  .pre-header .pre-header-text {
+    font-size: 1rem;
+  }
   /* home page */
   .home-slider .owl-item {
     height: 100%;
   }
   .home-slider .owl-item .slide .slider-card {
-    bottom: 6%;
+    bottom: 2%;
   }
   .home-slider .owl-item .slide .slider-card .card-text {
     font-size: 0.7rem;
   }
-  .home-slider .owl-nav button.owl-next span, .home-slider .owl-nav button.owl-prev span {
+  .home-slider .owl-nav button.owl-next span,
+  .home-slider .owl-nav button.owl-prev span {
     height: 4rem;
     font-size: 3rem;
     padding: 0 0.6rem;
   }
   #home .content {
     width: 75%;
+  }
+  #home .content .about-enad,
+  #home .content .design-philosophy {
+    line-height: 1.5rem;
   }
   #home .content .services .service {
     -ms-flex-preferred-size: 33%;
@@ -1662,28 +1401,34 @@ header .navigation ul li:hover {
   /* team page */
   .team-hero {
     min-height: 50vh;
-    background: url(../../images/team-hero-resp.jpg);
+    background: url(../../images/team-hero-lap-resp.jpg);
     background-attachment: unset;
     background-repeat: no-repeat;
     background-position: center;
   }
   #team .content {
-    width: 65%;
+    width: 80%;
+  }
+  #team .content .about-enad {
+    line-height: 1.5rem;
   }
   #team .content .principal-architect {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  #team .content .principal-architect .principal-architect-content {
+    line-height: 1.5rem;
+  }
   #team .content .team-members .team-card-container .team-card .member-image {
-    max-width: 35%;
+    max-width: 45%;
     margin-right: 1rem;
   }
   #team .content .team-members .team-card-container .team-card .member-detail h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #team .content .team-members .team-card-container .team-card .member-detail p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   /* projects landing page */
   .logo {
@@ -1702,10 +1447,11 @@ header .navigation ul li:hover {
     width: 70%;
   }
   #projects-landing .content .project-card .project-link .title-block .title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   /* projects page */
   #projects .content .project {
+    min-height: 37vh;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

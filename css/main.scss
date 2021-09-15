@@ -87,6 +87,11 @@
         }
     }
 }
+@media(min-width:769px){
+    .mobile-menu{
+        display:none!important;
+    }
+}
 
 
 @import "responsive/responsive-mobiles-01";
