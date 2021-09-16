@@ -7,23 +7,25 @@
         
         padding: 0 0 4rem 0;
         .project-heading-box {
+            min-height: 12vh;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             width: 100%;
-            min-height: 12vh;
+            
             padding-left: 15%;
-            margin-bottom: 5rem;
-            background-color: #ececec;
-            background-attachment: fixed;
+            
             opacity: 0.7;
+            /* background-color: #ececec;
+            background-attachment: fixed;
+            
             background: radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent),
                 radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent) 15px
                     15px,
                 linear-gradient(#609a5c 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px,
                 linear-gradient(90deg, #609a5c 1.2000000000000002px, #ececec 1.2000000000000002px) -0.6000000000000001px
                     0;
-            background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+            background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px; */
             .project-heading {
                 font-size: 2.5rem;
                 
@@ -33,7 +35,7 @@
             margin-right: 2rem;
         }
         .project {
-            min-height: 35vh;
+            min-height: 32vh;
 
             display: flex;
             justify-content: center;
@@ -44,6 +46,21 @@
                 line-height: 1.3rem;
                 .project-text {
                     font-size: 0.9rem;
+                }
+                .research-links{
+                    display: flex;
+                    
+                    align-items: center;
+                    margin-top: 2rem;
+                    .research-link{
+                        border: solid 1px #c9c9c9;
+                        padding: 0.4rem 1.5rem;
+                        border-radius: 0.5rem;
+                        transition: 0.2s;
+                        &:hover{
+                            background: #dadada;
+                        }
+                    }
                 }
             }
         }

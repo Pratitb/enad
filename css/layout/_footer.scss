@@ -1,6 +1,6 @@
 #footer {
     min-height: 15vh;
-    padding: 2rem 2rem 1rem;
+    padding: 0rem 5rem 0;
     display: flex;
     flex-direction: column;
     background: $light-grey;
@@ -13,7 +13,7 @@
         .about {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             width: 30%;
             .logo-link {
                 justify-content: flex-start;
@@ -25,7 +25,7 @@
             flex-direction: column;
             .main-contact {
                 display: flex;
-
+                padding-top: 3rem;
                 .address {
                     width: 45%;
                     .detail {
@@ -43,6 +43,7 @@
             flex-direction: column;
             min-height: 12vh;
             justify-content: flex-start;
+            width: 50%;
 
             .detail {
                 display: flex;
@@ -58,10 +59,12 @@
 }
 .footer-services {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     background: $light-grey;
-    padding: 1rem 2rem;
-
+    padding: 1rem 5rem;
+    .footer-our-services-heading{
+        width: 15%;
+    }
     .links {
         display: flex;
 

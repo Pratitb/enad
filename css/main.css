@@ -72,7 +72,7 @@ a {
 }
 
 .sub-text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .tj {
@@ -123,6 +123,10 @@ a {
 
 .txt-und {
   text-decoration: underline !important;
+}
+
+.bdr-none {
+  border: none !important;
 }
 
 .img-res {
@@ -381,7 +385,7 @@ header .navigation ul li:hover {
 
 #footer {
   min-height: 15vh;
-  padding: 2rem 2rem 1rem;
+  padding: 0rem 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,9 +416,9 @@ header .navigation ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 30%;
 }
 
@@ -438,6 +442,7 @@ header .navigation ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 3rem;
 }
 
 #footer .main-footer-one .main-footer-two .main-contact .address {
@@ -467,6 +472,7 @@ header .navigation ul li:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 50%;
 }
 
 #footer .main-footer-one .contact .detail {
@@ -485,11 +491,15 @@ header .navigation ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background: #3c3c3c47;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
+}
+
+.footer-services .footer-our-services-heading {
+  width: 15%;
 }
 
 .footer-services .links {
@@ -630,11 +640,11 @@ header .navigation ul li:hover {
 }
 
 .team-hero {
-  min-height: 55vh;
+  min-height: 60vh;
   background: url(../../images/team-hero.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 32%;
+  background-position: 50% 35%;
 }
 
 #team {
@@ -880,6 +890,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project-heading-box {
+  min-height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,14 +901,18 @@ header .navigation ul li:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 12vh;
   padding-left: 15%;
-  margin-bottom: 5rem;
-  background-color: #ececec;
-  background-attachment: fixed;
   opacity: 0.7;
-  background: radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#609a5c 1.2px, transparent 1.2px) 0 -0.6px, linear-gradient(90deg, #609a5c 1.2px, #ececec 1.2px) -0.6px 0;
-  background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+  /* background-color: #ececec;
+            background-attachment: fixed;
+            
+            background: radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent),
+                radial-gradient(circle, transparent 20%, #ececec 20%, #ececec 80%, transparent 80%, transparent) 15px
+                    15px,
+                linear-gradient(#609a5c 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px,
+                linear-gradient(90deg, #609a5c 1.2000000000000002px, #ececec 1.2000000000000002px) -0.6000000000000001px
+                    0;
+            background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px; */
 }
 
 #projects .content .project-heading-box .project-heading {
@@ -909,7 +924,7 @@ header .navigation ul li:hover {
 }
 
 #projects .content .project {
-  min-height: 35vh;
+  min-height: 32vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,6 +943,28 @@ header .navigation ul li:hover {
 
 #projects .content .project .project-details .project-text {
   font-size: 0.9rem;
+}
+
+#projects .content .project .project-details .research-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+#projects .content .project .project-details .research-links .research-link {
+  border: solid 1px #c9c9c9;
+  padding: 0.4rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#projects .content .project .project-details .research-links .research-link:hover {
+  background: #dadada;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -1073,7 +1110,10 @@ header .navigation ul li:hover {
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
-  #home .content .about-enad, #home .content .design-philosophy, #home .content .core-values-principles .values .value-column .value .value-name, #home .content .services .service-column .service .service-name {
+  #home .content .about-enad,
+  #home .content .design-philosophy,
+  #home .content .core-values-principles .values .value-column .value .value-name,
+  #home .content .services .service-column .service .service-name {
     font-size: 0.9rem;
   }
   #home .content .core-values-principles .values {
@@ -1096,16 +1136,19 @@ header .navigation ul li:hover {
   }
   #team .content {
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 2rem;
   }
   #team .content .content-heading {
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
-  #team .content .about-enad, #team .content .principal-architect-content {
-    font-size: 0.9rem;
+  #team .content .about-enad,
+  #team .content .principal-architect-content {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
   }
   #team .content .principal-architect {
+    padding: 3rem 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1122,9 +1165,6 @@ header .navigation ul li:hover {
   }
   #team .content .principal-architect .principal-architect-image img {
     max-width: 90%;
-  }
-  #team .content .principal-architect .principal-architect-content {
-    line-height: 1.5rem;
   }
   #team .content .team-members {
     -webkit-box-align: center;
@@ -1149,10 +1189,6 @@ header .navigation ul li:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   #team .content .team-members .core-team .team-card-container .team-card,
   #team .content .team-members .associates .team-card-container .team-card {
@@ -1160,7 +1196,7 @@ header .navigation ul li:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
   }
@@ -1168,6 +1204,7 @@ header .navigation ul li:hover {
   #team .content .team-members .associates .team-card-container .team-card .member-image {
     margin-bottom: 2rem;
     margin-right: 0;
+    max-width: 110px;
   }
   #team .content .team-members .core-team .team-card-container .team-card .member-detail,
   #team .content .team-members .associates .team-card-container .team-card .member-detail {
@@ -1178,9 +1215,14 @@ header .navigation ul li:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  #team .content .team-members .core-team .team-card-container .team-card .member-detail h4,
+  #team .content .team-members .associates .team-card-container .team-card .member-detail h4 {
+    font-size: 0.8rem;
+  }
+  #team .content .team-members .core-team .team-card-container .team-card .member-detail p,
+  #team .content .team-members .associates .team-card-container .team-card .member-detail p {
+    font-size: 0.7rem;
   }
   #projects-landing .content .project-card {
     padding: 1rem;
@@ -1200,7 +1242,7 @@ header .navigation ul li:hover {
     background: rgba(0, 0, 0, 0.8);
   }
   #projects .content .project-heading-box {
-    min-height: 20vh;
+    min-height: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1208,18 +1250,19 @@ header .navigation ul li:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0;
+    padding: 0;
   }
   #projects .content .project-heading-box .project-heading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem;
   }
   #projects .content .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
   }
   #projects .content .project .projects {
     margin-bottom: 1rem;
@@ -1241,7 +1284,6 @@ header .navigation ul li:hover {
     padding: 0.5rem 1rem;
   }
   #footer {
-    min-height: 50vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1258,6 +1300,7 @@ header .navigation ul li:hover {
             flex-direction: column;
   }
   #footer .main-footer-one .about {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1303,11 +1346,11 @@ header .navigation ul li:hover {
   #footer .main-footer-one .main-footer-two .main-contact .address .detail .contact-detail {
     font-size: 0.8rem;
   }
-  #footer .footer-services {
-    -webkit-box-orient: horizontal;
+  .footer-services {
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1317,40 +1360,25 @@ header .navigation ul li:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #footer .footer-services h4 {
-    margin-right: 1rem;
+  .footer-services .footer-our-services-heading {
     margin-bottom: 1rem;
   }
-  #footer .footer-services .links {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #footer .footer-services .links .shortcut-links-column {
-    width: 100%;
+  .footer-services .links .shortcut-links-column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  #footer .footer-services .links .shortcut-links-column .shortcut-links {
+  .footer-services .links .shortcut-links-column .shortcut-links {
     font-size: 0.8rem;
-    text-align: center;
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    margin-bottom: 0.5rem;
-    border: 0;
-    padding: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 1rem;
+    border: none;
   }
   .copyright {
     -webkit-box-pack: center;
@@ -1365,11 +1393,26 @@ header .navigation ul li:hover {
   .home-slider .owl-dots {
     left: 33%;
   }
+  #home .content .our-services {
+    margin: 0;
+  }
+  #team .content {
+    padding: 3rem 2rem;
+  }
+  #team .content .about-enad {
+    line-height: 1.5rem;
+  }
+  #team .content .principal-architect {
+    padding: 3rem 0;
+  }
   #team .content .team-members .core-team .team-card-container, #team .content .team-members .associates .team-card-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  #team .content .team-members .core-team .team-card-container .team-card, #team .content .team-members .associates .team-card-container .team-card {
+    margin-bottom: 2rem;
   }
   #team .content .team-members .core-team .team-card-container .team-card .member-detail, #team .content .team-members .associates .team-card-container .team-card .member-detail {
     -webkit-box-align: start;
@@ -1379,11 +1422,32 @@ header .navigation ul li:hover {
   #projects-landing .content {
     padding: 0 0 3rem 0;
   }
+  #projects-landing .content .project-card {
+    padding: 0.5rem;
+  }
   #projects-landing .content .project-card .project-link img {
-    max-width: 155px;
+    max-width: 165px;
+  }
+  #projects-landing .content .project-card .project-link .title-block {
+    width: 82%;
   }
   #projects-landing .content .project-card .project-link .title-block .title {
+    padding: 0.4rem;
     font-size: 0.6rem;
+  }
+  #projects .content .project-heading-box {
+    min-height: 0vh;
+    padding: 0;
+  }
+  #projects .content .project-heading-box .project-heading {
+    font-size: 1.5rem;
+    padding: 2rem 0 0;
+  }
+  #footer {
+    min-height: auto;
+  }
+  #footer .main-footer-one .about {
+    width: 100%;
   }
   #footer .main-footer-one .contact .detail .contact-detail {
     font-size: 0.9rem;
@@ -1391,8 +1455,31 @@ header .navigation ul li:hover {
   #footer .main-footer-one .main-footer-two .main-contact .address .detail .contact-detail {
     font-size: 0.9rem;
   }
-  #footer .footer-services .links .shortcut-links-column .shortcut-links {
-    font-size: 0.9rem;
+  .footer-services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-services .footer-our-services-heading {
+    margin-bottom: 1rem;
+  }
+  .footer-services .links .shortcut-links-column {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-services .links .shortcut-links-column .shortcut-links {
+    font-size: 0.8rem;
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  .copyright {
+    font-size: 0.7rem;
   }
   .mobile-menu .menu-link .material-icons {
     font-size: 1.5rem;
@@ -1420,10 +1507,10 @@ header .navigation ul li:hover {
     padding: 0 0.6rem;
   }
   #home .content {
-    width: 75%;
+    width: 68%;
   }
   #home .content .about-enad,
-  #home .content .design-philosophy, #home .content .core-values-principles, #home .content .our-services {
+  #home .content .design-philosophy, #home .content .core-values-principles .values .value-column .value .value-name, #home .content .services .service-column .service .service-name {
     font-size: 0.9rem;
   }
   #home .content .services .service {
@@ -1432,7 +1519,7 @@ header .navigation ul li:hover {
   }
   /* team page */
   .team-hero {
-    min-height: 50vh;
+    min-height: 56vh;
     background: url(../../images/team-hero-lap-resp.jpg);
     background-attachment: unset;
     background-repeat: no-repeat;
@@ -1463,9 +1550,6 @@ header .navigation ul li:hover {
   #team .content .team-members .team-card-container .team-card .member-detail h4 {
     font-size: 1rem;
   }
-  #team .content .team-members .team-card-container .team-card .member-detail p {
-    font-size: 0.9rem;
-  }
   /* projects landing page */
   .logo {
     max-width: 70%;
@@ -1487,17 +1571,20 @@ header .navigation ul li:hover {
   }
   /* projects page */
   #projects .content .project {
-    min-height: 42vh;
+    min-height: 40vh;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #projects .content .project .owl-nav {
+    display: none;
+  }
   #projects .content .project .project-details {
     width: 45%;
   }
   #projects .content .nav-btns {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   #projects .content .nav-btns .btns {
     padding: 0.7rem 1rem;
@@ -1509,11 +1596,11 @@ header .navigation ul li:hover {
   }
   /* common footer for pages in this range */
   #footer {
-    padding: 2rem 2rem 0;
+    padding: 1rem 2rem 0;
     min-height: 18vh;
   }
   #footer .main-footer-one .about {
-    width: 25%;
+    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1524,8 +1611,11 @@ header .navigation ul li:hover {
   #footer .main-footer-one .about .footer-logo {
     max-width: 80%;
   }
+  #footer .main-footer-one .main-footer-two .main-contact {
+    padding-top: 1.5rem;
+  }
   #footer .contact {
-    width: 33%;
+    width: 50%;
   }
   #footer .contact .detail {
     margin-right: 0;
@@ -1534,11 +1624,10 @@ header .navigation ul li:hover {
     font-size: 0.8rem;
   }
   #footer .contact .address {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    width: 20%;
   }
-  #footer .footer-services .links .shortcut-links {
-    font-size: 0.85rem;
+  .footer-services .links .shortcut-links {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
