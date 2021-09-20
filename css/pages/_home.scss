@@ -1,65 +1,11 @@
-#home {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background: rgba(236, 236, 236, 0.6);
-
-    .content {
-        width: 60%;
-        padding: 4rem 4rem 0rem;
-        .about-enad, .design-philosophy{
-            font-size: 1rem;
-            line-height: 1.3rem;
-
-        }
-        .about-enad, .design-philosophy, .our-services{
-            margin-bottom: 3rem;
-        }
-        .about-enad-heading,
-        .design-philosophy-heading,
-        .core-values-heading,
-        .our-services-heading {
-            font-size: 1.5rem;
-            
-        }
-        .core-values-principles {
-            margin-bottom: 2rem;
-            .values {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                .value-column {
-                    .value {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-
-                        margin-bottom: 1.5rem;
-                        .value-name {
-                            font-size: 1rem;
-                        }
-                    }
-                }
-            }
-        }
-        .services {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            
-            .service-column{
-                .service {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    
-                    margin-bottom: 1.5rem;
-                    .service-name {
-                        font-size: 1rem;
-                    }
-                }
+#home{
+    .content{
+        width: 50%;
+        .features {
+            @include flex(space-between, center, row);
+            .feature {
+                @include flex(flex-start, center, row);
+                margin-bottom: 1.5rem;
             }
         }
     }

@@ -1,18 +1,14 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center, row);
     padding: 0.5rem 2rem;
     
-    
-    
+    /* NAVIGATION STYLE START */
     .navigation {
         ul {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            width: 20vw;
+            @include flex(flex-end, flex-end, row);
             min-height: 9vh;
+            width: 20vw;
+
             li {
                 list-style: none;
                 font-size: 1rem;

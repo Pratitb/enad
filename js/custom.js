@@ -13,7 +13,7 @@ $(document).ready(function () {
   $(".home-slider").owlCarousel({
     stagePadding: 0,
     margin: 0,
-
+    
     items: 1,
     loop: true,
     autoplay: true,
@@ -30,7 +30,7 @@ $(document).ready(function () {
   $(".projects").owlCarousel({
     stagePadding: 0,
     margin: 0,
-
+    autoWidth: true,
     items: 1,
     loop: true,
     autoplay: true,
@@ -51,10 +51,11 @@ AOS.init({
 });
 
 function externalLinks() {
-  for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++)
-  {
-      var b = c[a];
-      b.getAttribute('href') && b.hostname !== location.hostname &&(b.target = '_blank')
+  for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
+    var b = c[a];
+    b.getAttribute("href") &&
+      b.hostname !== location.hostname &&
+      (b.target = "_blank");
   }
 }
 externalLinks();

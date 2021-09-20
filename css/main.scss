@@ -1,8 +1,8 @@
 @import "base/reset";
 @import "utils/variables";
 @import "utils/utilities";
+@import "utils/functions";
 
-@import "components/sidebar";
 @import "components/content";
 @import "components/mobile-menu";
 @import "components/nav-btns";
@@ -14,7 +14,7 @@
 @import "pages/projects-landing";
 @import "pages/projects";
 
-.owl-theme .owl-nav [class*=owl-]:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
     background: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0, 1);
 }
@@ -27,7 +27,7 @@
     .owl-nav {
         color: #000;
         margin: 0;
-        button.owl-prev {
+        button.owl-prev{
             position: absolute;
             top: 40%;
             left: 3%;
@@ -35,9 +35,9 @@
             border-radius: 40%;
             span {
                 display: inline-block;
-                height: 7rem;
+                height: 5rem;
                 padding: 0rem 1rem;
-                font-size: 5rem;
+                font-size: 3.5rem;
             }
         }
         button.owl-next {
@@ -48,9 +48,9 @@
             border-radius: 40%;
             span {
                 display: inline-block;
-                height: 7rem;
+                height: 5rem;
                 padding: 0rem 1rem;
-                font-size: 5rem;
+                font-size: 3.5rem;
             }
         }
     }
@@ -64,7 +64,6 @@
         }
     }
     .owl-item {
-        
         height: 100%;
         .slide {
             position: relative;
@@ -78,21 +77,27 @@
                 border-radius: 0.5rem;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
                 z-index: 2;
-                
+
                 .card-text {
                     font-size: 0.8rem;
                 }
-                
             }
         }
     }
 }
-@media(min-width:769px){
-    .mobile-menu{
-        display:none!important;
+@media(max-width:768px){
+    .navigation{
+        display: none;
+    }
+    .owl-nav{
+        display: none;
     }
 }
-
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
 
 @import "responsive/responsive-mobiles-01";
 @import "responsive/responsive-mobiles-02";

@@ -1,11 +1,14 @@
 .pre-header {
-    padding: 0.4rem;
+    
     display: flex;
     justify-content: center;
-    background: linear-gradient( to right, $logo-color);
+    padding: 0.4rem;
+    background: $logo-color;
     
     .pre-header-text {
-        color: #fff;
         font-size: 0.8rem;
+        font-style: italic;
+        color: #fff;
+        
     }
 }

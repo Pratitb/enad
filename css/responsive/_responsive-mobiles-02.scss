@@ -1,53 +1,19 @@
-@media (min-width: 376px) and (max-width: 430px) {
-    .home-slider{
-        .owl-dots{
-            left: 33%;
-        }
+@media (min-width: 376px) and (max-width: 450px) {
+    .team-hero {
+        min-height: 22vh;
     }
-    #home{
+    #projects-landing {
         .content{
-            .our-services{
-                margin: 0;
-            }
-        }
-    }
-    #team{
-        .content{
-            padding: 3rem 2rem;
-            .about-enad{
-                line-height: 1.5rem;
-            }
-            .principal-architect{
-                padding: 3rem 0;
-            }
-            .team-members{
-                .core-team, .associates{
-                    .team-card-container{
-                        flex-direction: row;
-                        .team-card{
-                            margin-bottom: 2rem;
-                            .member-detail{
-                                align-items: flex-start;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #projects-landing{
-        .content{
-            padding: 0 0 3rem 0;
+            justify-content: space-evenly;
+            padding: 2rem 0.5rem 4rem;
             .project-card{
-                padding: 0.5rem;
+                margin: 0 0 0.9rem;
+                img{
+                    max-width: 160px;
+                }
                 .project-link{
-                    img{
-                        max-width: 165px;
-                    }
                     .title-block{
-                        width: 82%;
                         .title{
-                            padding: 0.4rem;
                             font-size: 0.6rem;
                         }
                     }
@@ -57,71 +23,15 @@
     }
     #projects{
         .content{
-            .project-heading-box{
-                min-height: 0vh;
-                padding: 0;
-                .project-heading{
-                    font-size: 1.5rem;
-                    padding: 2rem 0 0;
-                }
-            }
-            
-        }
-    }
-    #footer {
-        min-height: auto;
-        .main-footer-one {
-            .about{
-                width: 100%;
-            }
-            .contact {
-                .detail {
-                    .contact-detail {
-                        font-size: 0.9rem;
-                    }
-                }
-            }
-            .main-footer-two {
-                .main-contact {
-                    .address {
-                        .detail {
-                            .contact-detail {
-                                font-size: 0.9rem;
-                            }
-                        }
-                    }
-                }
+            .project-headings{
+                min-height: auto;
             }
         }
-        
-    }
-    .footer-services {
-        flex-direction: column;
-        
-        .footer-our-services-heading{
-            margin-bottom: 1rem;
-        }
-        .links {
-            .shortcut-links-column {
-                justify-content: flex-start;
-                flex-wrap: wrap;
-                .shortcut-links {
-                    font-size: 0.8rem;
-                    flex-basis: 32%;
-                    margin-bottom: 1rem;
-                    border: none;
-                }
-            }
+        .nav-btns{
+            margin: 0;
         }
     }
     .copyright{
-        font-size: 0.7rem;
-    }
-    .mobile-menu{
-        .menu-link{
-            .material-icons{
-                font-size: 1.5rem;
-            }
-        }
+        font-size: 0.6rem;
     }
 }

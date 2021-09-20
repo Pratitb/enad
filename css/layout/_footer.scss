@@ -1,92 +1,51 @@
-#footer {
-    min-height: 15vh;
-    padding: 0rem 5rem 0;
+/* FOOTER STYLE START */
+footer {
+    
     display: flex;
-    flex-direction: column;
+    padding: 2rem 5rem;
     background: $light-grey;
-    z-index: -2;
-
-    .main-footer-one {
+    .about {
+        width: 35%;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        .about {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 30%;
-            .logo-link {
-                justify-content: flex-start;
-            }
+    }
+    .contact {
+        width: 35%;
+        .contact-detail {
+            margin-bottom: 1rem;
         }
-
-        .main-footer-two {
-            display: flex;
-            flex-direction: column;
-            .main-contact {
-                display: flex;
-                padding-top: 3rem;
-                .address {
-                    width: 45%;
-                    .detail {
-                        display: flex;
-                        line-height: 1.3rem;
-                        .contact-detail {
-                            font-size: 0.85rem;
-                        }
-                    }
-                }
-            }
-        }
-        .contact {
-            display: flex;
-            flex-direction: column;
-            min-height: 12vh;
-            justify-content: flex-start;
-            width: 50%;
-
-            .detail {
-                display: flex;
-                margin-bottom: 1rem;
-
-                .contact-detail {
-                    text-align: justify;
-                    font-size: 0.9rem;
-                }
-            }
-        }
+    }
+    .address {
+        width: 25%;
+        display: flex;
     }
 }
-.footer-services {
-    display: flex;
-    justify-content: flex-start;
-    background: $light-grey;
-    padding: 1rem 5rem;
-    .footer-our-services-heading{
-        width: 15%;
-    }
-    .links {
-        display: flex;
 
-        .shortcut-links-column {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .shortcut-links {
+/* OUR SERVICES STYLE START */
+.footer-services {
+    @include flex(space-between, center, row);
+    width: 100%;
+    padding: 1rem 5rem;
+    background: $light-grey;
+    .footer-services-names-box{
+        width: 90%;
+        display: flex;
+        
+        .footer-services-names {
+        
             font-size: 0.9rem;
-            padding: 0 1rem 0;
+            padding: 0 1rem;
             border-right: 1px solid;
         }
     }
 }
 
+/* COPYRIGHT STYLE START */
 .copyright {
-    display: flex;
-    justify-content: flex-end;
+    @include flex(flex-end, stretch, row);
+    font-size: 0.8rem;
     color: #fff;
     padding: 0.4rem 2rem;
     background: $logo-color;
-    font-size: 0.8rem;
     .developer-name {
         color: #000;
     }

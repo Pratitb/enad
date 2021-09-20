@@ -4,283 +4,154 @@
             font-size: 0.7rem;
         }
     }
-    .fas,
-    .far {
-        font-size: 1.2rem;
-    }
-    header {
-        .logo {
-            max-width: 70%;
-        }
-        .navigation {
-            display: none;
-        }
-    }
     .logo-link {
         justify-content: flex-start;
     }
     .home-slider {
-        width: 100%;
-        margin: 0;
-        .owl-item {
-            height: 100%;
-            .slide {
-                .slider-card {
-                    display: none;
-                    /* width: 150px;
-                    padding: 0.4rem;
-                    bottom: 10%;
-                    .card-text {
-                        font-size: 0.45rem;
-                    } */
-                }
-            }
-        }
-        .owl-nav {
-            display: none;
-        }
         .owl-dots {
-            left: 25%;
-            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
             button.owl-dot {
                 zoom: 0.6;
             }
         }
+        .owl-item {
+            .slide {
+                .slider-card {
+                    display: none;
+                }
+            }
+        }
     }
-    /* home page */
     #home {
         .content {
             width: 100%;
-            padding: 3rem 2rem;
-            .content-heading {
-                font-size: 1.3rem;
-                margin-bottom: 1rem;
-            }
-            .about-enad,
-            .design-philosophy,
-            .core-values-principles .values .value-column .value .value-name,
-            .services .service-column .service .service-name {
-                font-size: 0.9rem;
-            }
-            .core-values-principles {
-                .values {
-                    flex-direction: column;
-                }
-            }
-            .services {
+            padding: $content-mob-padd;
+            .features {
                 flex-direction: column;
+                align-items: flex-start;
             }
         }
     }
-    /* team page */
-    .team-hero {
+    .team-hero{
+        min-height: 40vh;
         background: url(../../images/team-hero-mob-01.jpg);
-        min-height: 30vh;
-
+        background-repeat: no-repeat;
         background-position: center;
     }
-    #team {
-        .content {
+    #team{
+        .content{
             width: 100%;
-            padding: 2rem;
-            .content-heading {
-                font-size: 1.3rem;
-                margin-bottom: 1rem;
-            }
-            .about-enad,
-            .principal-architect-content {
-                font-size: 0.8rem;
-                line-height: 1.3rem;    
-            }
-            .principal-architect {
-                padding: 3rem 0;
+            padding: $content-mob-padd;
+            .container{
                 flex-direction: column;
-
-                .principal-architect-image {
-                    display: flex;
-                    align-items: center;
-                    margin: 0 0 3rem 0;
-                    img {
-                        max-width: 90%;
-                    }
-                }
-                
-            }
-            .team-members {
-                align-items: center;
-                .core-team,
-                .associates {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .team-card-container {
-                        display: flex;
-                        
-                        .team-card {
-                            flex-direction: column;
-                            margin-bottom: 2rem;
-                            flex-basis: 0;
-                            .member-image {
-                                margin-bottom: 2rem;
-                                margin-right: 0;
-                                max-width: 110px;
-                            }
-                            .member-detail {
-                                display: flex;
-                                flex-direction: column;
-                                h4{
-                                    font-size: 0.8rem;
-                                }
-                                p{
-                                    font-size: 0.7rem;
-                                }
-                                
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #projects-landing {
-        .content {
-            .project-card {
-                padding: 1rem;
-                .project-link {
-                    .overlay {
-                        opacity: 0;
-                    }
-                    img {
-                        max-width: 250px;
-                    }
-                    .title-block {
-                        opacity: 1;
-                        .title {
-                            font-size: 0.8rem;
-                            padding: 0.5rem;
-                            background: rgba(0, 0, 0, 0.8);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #projects {
-        .content {
-            .project-heading-box {
-                min-height: 1vh;
-                display: flex;
-                justify-content: center;
                 margin-bottom: 0;
-                padding: 0;
-                .project-heading {
-                    font-size: 1.3rem;
-                    margin: 0;
-                    padding: 2rem 1rem 1rem;
+                .content-image{
+                    max-width: 100%;
+                    margin-bottom: 2rem;
                 }
             }
-            .project {
-                flex-direction: column;
-                padding: 1.5rem 2rem;
-                .projects {
-                    margin-bottom: 1rem;
-                    margin-right: 0;
-                }
-                .project-details {
-                    text-align: left;
-                    width: 100%;
-                    .project-text {
-                        text-align: justify;
-                        font-size: 0.8rem;
+            .member-box{
+                .member-card-box{
+                    flex-direction: column;
+                    .member-card{
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                        .member-image{
+                            max-width: 40%;
+                        }
                     }
-                }
-            }
-            .nav-btns {
-                margin: 0;
-                .btns {
-                    font-size: 0.7rem;
-                    padding: 0.5rem 1rem;
                 }
             }
         }
     }
-    #footer {
-        
-        flex-direction: column;
-        padding: 1rem 2rem;
-        justify-content: space-evenly;
-        .main-footer-one {
-            flex-direction: column;
-            .about {
-                width: 100%;
-                display: flex;
-                justify-content: center;
+    #projects-landing{
+        .content{
+            padding: 2rem 0 4rem 0;
+            .project-card{
+                
                 margin-bottom: 2rem;
-            }
-            .contact {
-                .detail {
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    .contact-detail {
-                        font-size: 0.8rem;
-                    }
-                }
-            }
-            .main-footer-two {
-                width: 100%;
-                .main-contact {
-                    flex-direction: column;
-                    margin-bottom: 1rem;
-                    .contact {
-                        margin: 0;
-                        min-height: 8vh;
-                        .detail {
-                            flex-direction: row;
-                        }
-                    }
-                    .address {
-                        width: 100%;
-                        .detail {
-                            .contact-detail {
-                                font-size: 0.8rem;
-                            }
+                .project-link{
+                    .title-block{
+                        
+                        opacity: 1;
+                        .title{
+                            font-size: 0.7rem;
+                            padding: 0.5rem;
                         }
                     }
                 }
             }
         }
-
-        
+    }
+    #projects{
+        .content{
+            width: 100%;
+            padding: $content-mob-padd;
+            flex-direction: column;
+            .project-headings{
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .project{
+                flex-direction: column;
+                margin-bottom: 3rem;
+                .projects{
+                    margin: 0 0 1rem 0;
+                }
+            }
+        }
+        .nav-btns{
+            margin-top: 3rem;
+            .btns{
+                font-size: 0.7rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+    footer {
+        flex-direction: column;
+        padding: 2rem 2rem 0;
+        .about,
+        .contact,
+        .address {
+            width: 100%;
+            
+        }
+        .about{
+            margin-bottom: 1rem;
+        }
     }
     .footer-services {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-
-        .footer-our-services-heading {
-            margin-bottom: 1rem;
+        align-items: flex-start;
+        padding: 1rem 1.5rem;
+        .footer-services-heading {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
         }
-        .links {
-            
-            
-            .shortcut-links-column {
-                display: flex;
-                justify-content: flex-start;
-                flex-wrap: wrap;
+        .footer-services-names-box {
+            width: 100%;
+            flex-wrap: wrap;
 
-                .shortcut-links {
-                    font-size: 0.8rem;
-                    flex-basis: 50%;
-                    margin-bottom: 1rem;
-                    border: none;
-                }
+            .footer-services-names {
+                font-size: 0.8rem;
+                padding: 0;
+                margin: 0 0.8rem 0.5rem 0;
+                flex-basis: 45%;
+                border: none;
             }
         }
     }
-    .copyright {
-        justify-content: center;
-        padding: 0.5rem;
-        font-size: 0.6rem;
+    .copyright{
+        padding: 0.4rem 0.6rem;
+        font-size: 0.55rem;
+    }
+    .fas,
+    .far {
+        font-size: 1.2rem;
+        margin-right: 0.6rem;
     }
 }

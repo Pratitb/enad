@@ -1,176 +1,82 @@
 @media (min-width: 1200px) and (max-width: 1899px) {
-    .pre-header{
-        .pre-header-text{
-            font-size: 0.8rem;
-        }
-    }
-    /* home page */
-    .home-slider {
-        .owl-item {
-            height: 100%;
-            .slide {
-                .slider-card {
-                    bottom: 2%;
-                    .card-text {
-                        font-size: 0.7rem;
-                    }
-                }
-            }
-        }
-        .owl-nav {
-            button.owl-next,
-            button.owl-prev {
-                span {
-                    height: 4rem;
-                    font-size: 3rem;
-                    padding: 0 0.6rem;
-                }
+    .home-slider{
+        .owl-nav{
+            button.owl-next span, button.owl-prev span{
+                height: 5rem;
+                font-size: 3.5rem;
             }
         }
     }
-    #home {
-        .content {
-            width: 68%;
-            .about-enad,
-            .design-philosophy, .core-values-principles .values .value-column .value .value-name, .services .service-column .service .service-name {
-                font-size: 0.9rem;
-            }
-            .services {
-                .service {
-                    flex-basis: 33%;
-                }
-            }
+    #home{
+        .content{
+            width: 55%;
         }
     }
-    /* team page */
     .team-hero {
-        min-height: 56vh;
         background: url(../../images/team-hero-lap-resp.jpg);
-        background-attachment: unset;
-        background-repeat: no-repeat;
+
         background-position: center;
+        background-repeat: no-repeat;
     }
-    #team {
-        .content {
-            padding: 5rem 1rem 1rem;
-            width: 65%;
-            .about-enad {
-                font-size: 0.9rem;
-                line-height: 1.3rem;
-            }
-            .principal-architect {
-                align-items: flex-start;
-                padding: 5rem 0 4rem;
-                .principal-architect-content {
-                    font-size: 0.9rem;
-                    line-height: 1.3rem;
-                }
-            }
-            .team-members {
-                .team-card-container {
-                    .team-card {
-                        .member-image {
-                            max-width: 45%;
-                            margin-right: 1rem;
-                        }
-                        .member-detail {
-                            h4 {
-                                font-size: 1rem;
-                            }
-                            
+    #team{
+        .content{
+            .member-box{
+                .member-card-box{
+                    .member-card{
+                        .member-image{
+                            max-width: 40%;
                         }
                     }
                 }
             }
         }
     }
-    /* projects landing page */
-    .logo {
-        max-width: 70%;
-    }
-
     #projects-landing {
-        
         .content {
             justify-content: flex-start;
             .project-card {
                 flex-basis: 25%;
-
-                .project-link {
-                    .title-block {
-                        width: 70%;
-                        .title {
-                            font-size: 0.9rem;
-                        }
-                    }
-                }
             }
         }
     }
-    /* projects page */
-
     #projects {
         .content {
+            width: 65%;
             .project {
                 min-height: 40vh;
-                width: 100%;
-                justify-content: center;
-                .owl-nav{
-                    display: none;
-                }
-                .project-details {
-                    width: 45%;
-                }
-            }
-            .nav-btns {
-                margin-top: 3rem;
-                .btns {
-                    padding: 0.7rem 1rem;
-                    font-size: 0.9rem;
-                }
             }
         }
     }
-    .projects {
-        width: 360px;
-        margin-right: 2rem;
-    }
-    /* common footer for pages in this range */
-    #footer {
-        padding: 1rem 2rem 0;
-        min-height: 18vh;
-        .main-footer-one{
-            .about {
-                width: 30%;
-                display: flex;
-                justify-content: space-evenly;
-                .footer-logo {
-                    max-width: 80%;
-                }
-            }
-            .main-footer-two{
-                .main-contact{
-                    padding-top: 1.5rem;
-                }
-            }
+    footer {
+        justify-content: space-evenly;
+        padding: 2rem 5rem 1rem;
+        .fas,
+        .far {
+            font-size: 1.2rem;
+        }
+        .about,
+        .contact,
+        .address {
+            width: 33%;
+        }
+        .contact,
+        .address {
+            padding-top: 0.5rem;
         }
         .contact {
-            width: 50%;
-            .detail {
-                margin-right: 0;
-                .contact-detail {
-                    font-size: 0.8rem;
-                }
-            }
-            .address {
-                width: 20%;
+            .contact-detail {
+                margin-bottom: 0.3rem;
             }
         }
-        
     }
     .footer-services {
-        .links {
-            .shortcut-links {
+        padding: 1rem 5rem;
+        .footer-services-names-box{
+            
+            .footer-services-heading {
+                font-size: 1rem;
+            }
+            .footer-services-names {
                 font-size: 0.8rem;
             }
         }
