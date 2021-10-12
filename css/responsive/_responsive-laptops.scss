@@ -1,14 +1,142 @@
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media(min-width:1025px) and (max-width:1280px){
     .home-slider{
+        .owl-item{
+            .slide{
+                .slider-card{
+                    .card-text{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
         .owl-nav{
-            button.owl-next span, button.owl-prev span{
-                height: 5rem;
-                font-size: 3.5rem;
+            button.owl-prev, button.owl-next{
+                span{
+                    font-size: 3rem;
+                    height: 4rem;
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+        .owl-dots{
+            button.owl-dot{
+                zoom: 0.7;
             }
         }
     }
-    #home{
+    .pre-header{
+        .pre-header-text{
+            font-size: 0.7rem;
+        }
+    }
+    .logo{
+        max-width: 60%;
+    }
+    header{
+        .navigation{
+            ul{
+                li{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    #home, #team{
         .content{
+            width: 80%;
+            .content-box{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .team-hero{
+        min-height: 30vh;
+        
+    }
+    #team{
+        .content{
+            .container{
+                align-items: flex-start;
+                margin-bottom: 0;
+            }
+            .member-box{
+                .member-card-box{
+                    margin-bottom: 1rem;
+                    .member-card{
+                        flex-basis: 33%;
+                        .member-image{
+                            max-width: 35%;
+                        }
+                        .member-detail{
+                            h4{
+                                font-size: 0.8rem;
+                            }
+                            .sub-text{
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #projects-landing{
+        
+        .content{
+            padding: 0 0 5rem 0;
+            justify-content: center;
+            
+            .project-card{
+                max-width: 25%;
+            }
+        }
+    }
+    footer{
+        
+        padding: 1rem 5rem;
+        .about{
+            width: 33%;
+        }
+        .address{
+            width: 33%;
+        }
+        .contact-detail-link{
+            font-size: 0.8rem;
+        }
+    }
+    .footer-services{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.5rem 5rem 1rem;
+        .footer-services-heading{
+            font-size: 0.8rem;
+        }
+        .footer-services-names-box{
+            .footer-services-names{
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .copyright{
+        font-size: 0.7rem;
+    }
+    .fas, .far{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .home-slider {
+        .owl-nav {
+            button.owl-next span,
+            button.owl-prev span {
+                height: 5rem;
+                font-size: 3.5rem;
+                padding: 0 0.7rem;
+            }
+        }
+    }
+    #home {
+        .content {
             width: 55%;
         }
     }
@@ -18,12 +146,13 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    #team{
-        .content{
-            .member-box{
-                .member-card-box{
-                    .member-card{
-                        .member-image{
+    #team {
+        .content {
+            .member-box {
+                .member-card-box {
+                    .member-card {
+                        margin-bottom: 1rem;
+                        .member-image {
                             max-width: 40%;
                         }
                     }
@@ -35,7 +164,12 @@
         .content {
             justify-content: flex-start;
             .project-card {
-                flex-basis: 25%;
+                max-width: 25%;
+                .project-link {
+                    img {
+                        max-width: 100%;
+                    }
+                }
             }
         }
     }
@@ -48,7 +182,7 @@
         }
     }
     footer {
-        justify-content: space-evenly;
+        justify-content: flex-start;
         padding: 2rem 5rem 1rem;
         .fas,
         .far {
@@ -70,9 +204,12 @@
         }
     }
     .footer-services {
-        padding: 1rem 5rem;
-        .footer-services-names-box{
-            
+        padding: 1rem 0 1rem 5rem;
+        .footer-services-heading {
+            font-size: 0.9rem;
+        }
+        .footer-services-names-box {
+            width: 88%;
             .footer-services-heading {
                 font-size: 1rem;
             }

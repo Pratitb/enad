@@ -27,7 +27,7 @@
     .owl-nav {
         color: #000;
         margin: 0;
-        button.owl-prev{
+        button.owl-prev {
             position: absolute;
             top: 40%;
             left: 3%;
@@ -57,7 +57,8 @@
     .owl-dots {
         position: absolute;
         bottom: 1%;
-        left: 45%;
+        left: 50%;
+        transform: translate(-50%);
         margin-top: 1rem;
         button.owl-dot {
             zoom: 1;
@@ -85,11 +86,11 @@
         }
     }
 }
-@media(max-width:768px){
-    .navigation{
+@media (max-width: 768px) {
+    .navigation {
         display: none;
     }
-    .owl-nav{
+    .owl-nav {
         display: none;
     }
 }
@@ -99,6 +100,6 @@
     }
 }
 
-@import "responsive/responsive-mobiles-01";
-@import "responsive/responsive-mobiles-02";
+@import "responsive/responsive-mobiles";
+@import "responsive/responsive-tablets";
 @import "responsive/responsive-laptops";

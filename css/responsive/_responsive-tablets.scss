@@ -1,0 +1,124 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mobile-menu {
+        width: 40%;
+        .menu-link {
+            .material-icons {
+                font-size: 2rem;
+            }
+            .menu-text {
+                font-size: 1rem;
+            }
+        }
+    }
+    .pre-header{
+        .pre-header-text{
+            font-size: 0.8rem;
+        }
+    }
+    #home,
+    #team,
+    #projects {
+        .content {
+            .content-box {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    #home {
+        .content {
+            .features {
+                flex-direction: row;
+            }
+        }
+    }
+    .team-hero {
+        min-height: 20vh;
+        background: url(../../images/team-hero-tablets.jpg) no-repeat center;
+    }
+    #team {
+        .content {
+            .container {
+                align-items: center;
+            }
+            .member-box {
+                margin-bottom: 1rem;
+                .member-card-box {
+                    flex-direction: row;
+                    .member-card{
+                        flex-basis: 50%;
+                    }
+                }
+            }
+        }
+    }
+    #projects-landing{
+        .content{
+            padding: 0 0 4rem 0;
+            .project-card{
+                max-width: 50%;
+                margin: 0;
+                .project-link{
+                    img{
+                        max-width: 100%;
+                    }
+                    .title-block{
+                        .title{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #projects{
+        .content{
+            .project-headings{
+                min-height: auto;
+            }
+            .project{
+                min-height: auto;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+                .detail{
+                    max-width: 45%;
+                }
+            }
+        }
+        .nav-btns{
+            margin: 0;
+            .btns{
+                font-size: 0.8rem;
+                padding: 0.8rem;
+            }
+        }
+    }
+    footer {
+        flex-direction: row;
+        .about {
+            width: 80%;
+        }
+        .contact {
+            .contact-detail {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .footer-services {
+        flex-direction: column;
+
+        padding: 1rem 1.5rem;
+        .footer-services-heading {
+            font-size: 1rem;
+        }
+        .footer-services-names-box {
+            flex-direction: row;
+            flex-basis: auto;
+            flex-wrap: initial;
+        }
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
+}

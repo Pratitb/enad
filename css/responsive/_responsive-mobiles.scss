@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .pre-header {
         .pre-header-text {
             font-size: 0.7rem;
@@ -58,7 +58,7 @@
                         width: 100%;
                         margin-bottom: 1.5rem;
                         .member-image{
-                            max-width: 40%;
+                            max-width: 30%;
                         }
                     }
                 }
@@ -155,3 +155,61 @@
         margin-right: 0.6rem;
     }
 }
+/* Following code has dependencies in the above code. That is the reason the below range has less code */
+@media (min-width: 376px) and (max-width: 450px) {
+    .logo{
+        max-width: 65%;
+    }
+    .team-hero {
+        min-height: 14vh;
+        background: url(../../images/team-hero-mob-02.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #projects-landing {
+        .content{
+            
+            padding: 0rem 0rem 4rem;
+            .project-card{
+                margin: 0;
+                max-width: 50%;
+                .project-link{
+                    .title-block{
+                        .title{
+                            font-size: 0.6rem;
+                        }
+                    }
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #projects{
+        .content{
+            .project-headings{
+                min-height: auto;
+                font-size: 1.3rem;
+            }
+        }
+        .nav-btns{
+            margin: 0;
+        }
+    }
+    footer{
+        .contact{
+            order: 2;
+        }
+        .address{
+            margin-bottom: 1rem;
+        }
+    }
+    .copyright{
+        font-size: 0.7rem;
+    }
+    .fas, .far{
+        font-size: 1rem;
+    }
+}
+
