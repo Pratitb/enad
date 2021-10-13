@@ -1,9 +1,8 @@
 .team-hero {
     min-height: 60vh;
-    background: url(../../images/team-hero.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 35%;
+    background: url(../../images/team-hero.jpg) no-repeat center;
+
+    background-size: contain;
 }
 
 .content {

@@ -159,7 +159,6 @@ a {
 }
 
 .projects {
-  max-width: 360px;
   border-radius: 2rem;
 }
 
@@ -193,6 +192,12 @@ a {
 
 .projects .owl-dots {
   display: none;
+}
+
+@media (min-width: 451px) {
+  .projects {
+    max-width: 360px;
+  }
 }
 
 .disabled {
@@ -539,10 +544,8 @@ footer .address {
 
 .team-hero {
   min-height: 60vh;
-  background: url(../../images/team-hero.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 50% 35%;
+  background: url(../../images/team-hero.jpg) no-repeat center;
+  background-size: contain;
 }
 
 .content .container {
@@ -745,42 +748,38 @@ footer .address {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
-  padding: 4rem 0;
-  width: 100%;
+  padding: 0 0 4rem 0;
+  width: 70%;
 }
 
 #projects .content .projects-headings-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 20%;
+  min-height: 12vh;
 }
 
 #projects .content .projects-headings-box .project-headings {
-  min-height: 12vh;
-  font-size: 2.5rem;
-  margin-right: 2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.5rem;
   opacity: 0.7;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 #projects .content .projects-box {
@@ -790,14 +789,13 @@ footer .address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
 }
 
 #projects .content .projects-box .project {
@@ -995,6 +993,9 @@ footer .address {
   .home-slider .owl-item .slide .slider-card {
     display: none;
   }
+  .logo {
+    max-width: 60%;
+  }
   #home .content {
     width: 100%;
     padding: 2rem;
@@ -1009,10 +1010,7 @@ footer .address {
             align-items: flex-start;
   }
   .team-hero {
-    min-height: 40vh;
-    background: url(../../images/team-hero-mob-01.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 15vh;
   }
   #team .content {
     width: 100%;
@@ -1043,17 +1041,20 @@ footer .address {
     max-width: 30%;
   }
   #projects-landing .content {
-    padding: 2rem 0 4rem 0;
+    padding: 0 0 4rem 0;
   }
   #projects-landing .content .project-card {
-    margin-bottom: 2rem;
+    max-width: 50%;
+  }
+  #projects-landing .content .project-card .project-link img {
+    max-width: 100%;
   }
   #projects-landing .content .project-card .project-link .title-block {
     opacity: 1;
   }
   #projects-landing .content .project-card .project-link .title-block .title {
-    font-size: 0.7rem;
-    padding: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.4rem;
   }
   #projects .content {
     width: 100%;
@@ -1063,28 +1064,34 @@ footer .address {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #projects .content .project-headings {
-    font-size: 1.5rem;
+  #projects .content .projects-headings-box .project-headings {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
   }
-  #projects .content .project {
+  #projects .content .projects-box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #projects .content .projects-box .project {
+    max-width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 3rem;
   }
-  #projects .content .project .projects {
+  #projects .content .projects-box .project .projects {
     margin: 0 0 1rem 0;
   }
   #projects .nav-btns {
-    margin-top: 3rem;
+    margin-top: 0;
   }
   #projects .nav-btns .btns {
-    font-size: 0.7rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.6rem;
   }
   footer {
     -webkit-box-orient: vertical;
@@ -1097,6 +1104,11 @@ footer .address {
   footer .contact,
   footer .address {
     width: 100%;
+  }
+  footer .about .contact-detail-link,
+  footer .contact .contact-detail-link,
+  footer .address .contact-detail-link {
+    font-size: 0.8rem;
   }
   footer .about {
     margin-bottom: 1rem;
@@ -1134,31 +1146,25 @@ footer .address {
   }
   .fas,
   .far {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-right: 0.6rem;
   }
 }
 
-/* Following code has dependencies in the above code. That is the reason the below range has less code */
+/* Following code has dependencies in the above code. That is the reason the below range has less code than the above range */
 @media (min-width: 376px) and (max-width: 450px) {
   .logo {
-    max-width: 65%;
-  }
-  .team-hero {
-    min-height: 14vh;
-    background: url(../../images/team-hero-mob-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    max-width: 60%;
   }
   #projects-landing .content {
-    padding: 0rem 0rem 4rem;
+    padding: 0rem 0rem 5rem;
   }
   #projects-landing .content .project-card {
     margin: 0;
     max-width: 50%;
   }
   #projects-landing .content .project-card .project-link .title-block .title {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   #projects-landing .content .project-card .project-link img {
     max-width: 100%;
@@ -1181,7 +1187,8 @@ footer .address {
   .copyright {
     font-size: 0.7rem;
   }
-  .fas, .far {
+  .fas,
+  .far {
     font-size: 1rem;
   }
 }
@@ -1199,10 +1206,16 @@ footer .address {
   .pre-header .pre-header-text {
     font-size: 0.8rem;
   }
+  .logo {
+    max-width: 70%;
+  }
+  .sub-text {
+    font-size: 0.9rem;
+  }
   #home .content .content-box,
   #team .content .content-box,
   #projects .content .content-box {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
   }
   #home .content .features {
@@ -1210,10 +1223,6 @@ footer .address {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .team-hero {
-    min-height: 20vh;
-    background: url(../../images/team-hero-tablets.jpg) no-repeat center;
   }
   #team .content .container {
     -webkit-box-align: center;
@@ -1244,12 +1253,16 @@ footer .address {
     max-width: 100%;
   }
   #projects-landing .content .project-card .project-link .title-block .title {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 0.6rem;
   }
-  #projects .content .project-headings {
-    min-height: auto;
+  #projects .content {
+    max-width: 80%;
   }
-  #projects .content .project {
+  #projects .content .projects-headings-box {
+    min-height: 6vh;
+  }
+  #projects .content .projects-box .project {
     min-height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1260,7 +1273,7 @@ footer .address {
             justify-content: space-between;
     margin-bottom: 2rem;
   }
-  #projects .content .project .detail {
+  #projects .content .projects-box .project .detail {
     max-width: 45%;
   }
   #projects .nav-btns {
@@ -1307,11 +1320,12 @@ footer .address {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
   .home-slider .owl-item .slide .slider-card .card-text {
     font-size: 0.7rem;
   }
-  .home-slider .owl-nav button.owl-prev span, .home-slider .owl-nav button.owl-next span {
+  .home-slider .owl-nav button.owl-prev span,
+  .home-slider .owl-nav button.owl-next span {
     font-size: 3rem;
     height: 4rem;
     padding: 0 0.5rem;
@@ -1320,28 +1334,30 @@ footer .address {
     zoom: 0.7;
   }
   .pre-header .pre-header-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .logo {
     max-width: 60%;
   }
   header .navigation ul li {
-    font-size: 0.8rem;
-  }
-  #home .content, #team .content {
-    width: 80%;
-  }
-  #home .content .content-box, #team .content .content-box {
     font-size: 0.9rem;
   }
+  #home .content,
+  #team .content {
+    width: 65%;
+  }
+  #home .content .content-box,
+  #team .content .content-box {
+    font-size: 1rem;
+  }
   .team-hero {
-    min-height: 30vh;
+    min-height: 50vh;
   }
   #team .content .container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 3rem;
   }
   #team .content .member-box .member-card-box {
     margin-bottom: 1rem;
@@ -1354,10 +1370,10 @@ footer .address {
     max-width: 35%;
   }
   #team .content .member-box .member-card-box .member-card .member-detail h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   #team .content .member-box .member-card-box .member-card .member-detail .sub-text {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   #projects-landing .content {
     padding: 0 0 5rem 0;
@@ -1368,8 +1384,28 @@ footer .address {
   #projects-landing .content .project-card {
     max-width: 25%;
   }
+  #projects-landing .content .project-card .project-link img {
+    max-width: 100%;
+  }
+  #projects-landing .content .project-card .project-link .title-block .title {
+    font-size: 1rem;
+  }
+  #projects .content {
+    width: 70%;
+  }
+  #projects .content .projects-headings-box .project-headings {
+    font-size: 1.5rem;
+  }
+  #projects .content .projects-box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #projects .content .projects-box .project {
+    min-height: 40vh;
+  }
   footer {
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
   }
   footer .about {
     width: 33%;
@@ -1378,7 +1414,7 @@ footer .address {
     width: 33%;
   }
   footer .contact-detail-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .footer-services {
     -webkit-box-orient: horizontal;
@@ -1394,12 +1430,13 @@ footer .address {
     font-size: 0.8rem;
   }
   .footer-services .footer-services-names-box .footer-services-names {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .copyright {
     font-size: 0.7rem;
   }
-  .fas, .far {
+  .fas,
+  .far {
     font-size: 1rem;
   }
 }
@@ -1413,11 +1450,6 @@ footer .address {
   }
   #home .content {
     width: 55%;
-  }
-  .team-hero {
-    background: url(../../images/team-hero-lap-resp.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
   }
   #team .content .member-box .member-card-box .member-card {
     margin-bottom: 1rem;

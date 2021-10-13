@@ -15,12 +15,18 @@
             font-size: 0.8rem;
         }
     }
+    .logo{
+        max-width: 70%;
+    }
+    .sub-text{
+        font-size: 0.9rem;
+    }
     #home,
     #team,
     #projects {
         .content {
             .content-box {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 line-height: 1.5rem;
             }
         }
@@ -32,10 +38,7 @@
             }
         }
     }
-    .team-hero {
-        min-height: 20vh;
-        background: url(../../images/team-hero-tablets.jpg) no-repeat center;
-    }
+    
     #team {
         .content {
             .container {
@@ -64,7 +67,8 @@
                     }
                     .title-block{
                         .title{
-                            font-size: 1.1rem;
+                            font-size: 1rem;
+                            padding: 0.6rem;
                         }
                     }
                 }
@@ -73,16 +77,19 @@
     }
     #projects{
         .content{
-            .project-headings{
-                min-height: auto;
+            max-width: 80%;
+            .projects-headings-box{
+                min-height: 6vh;
             }
-            .project{
-                min-height: auto;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-bottom: 2rem;
-                .detail{
-                    max-width: 45%;
+            .projects-box{
+                .project{
+                    min-height: auto;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                    .detail{
+                        max-width: 45%;
+                    }
                 }
             }
         }
@@ -116,6 +123,7 @@
             flex-direction: row;
             flex-basis: auto;
             flex-wrap: initial;
+            
         }
     }
     .copyright {

@@ -1,32 +1,29 @@
 #projects {
     .content {
-        @include flex(center, stretch, row);
+        @include flex(center, stretch, column);
         margin: 0 auto;
-        padding: 4rem 0;
-        width: 100%;
+        padding: 0 0 4rem 0;
+        width: 70%;
 
-        .projects-headings-box{
-            @include flex(center, flex-start, row);
-            width: 20%;
+        .projects-headings-box {
+            @include flex(flex-start, center, row);
+            min-height: 12vh;
             .project-headings {
-                
-                
-                min-height: 12vh;
-                font-size: 2.5rem;
-                margin-right: 2rem;
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                text-decoration: underline;
+                letter-spacing: 0.5rem;
                 opacity: 0.7;
-                writing-mode: vertical-lr;
-                transform: rotate(180deg);
             }
         }
 
-        .projects-box{
-            @include flex(center, center, column);
-            width: 60%;
+        .projects-box {
+            @include flex(center, flex-start, column);
+
             .project {
                 @include flex(flex-start, center, row);
                 min-height: 32vh;
-    
+
                 .projects {
                     margin-right: 2rem;
                 }

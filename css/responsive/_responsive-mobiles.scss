@@ -23,6 +23,9 @@
             }
         }
     }
+    .logo {
+        max-width: 60%;
+    }
     #home {
         .content {
             width: 100%;
@@ -33,31 +36,29 @@
             }
         }
     }
-    .team-hero{
-        min-height: 40vh;
-        background: url(../../images/team-hero-mob-01.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
+    .team-hero {
+        min-height: 15vh;
+       
     }
-    #team{
-        .content{
+    #team {
+        .content {
             width: 100%;
             padding: $content-mob-padd;
-            .container{
+            .container {
                 flex-direction: column;
                 margin-bottom: 0;
-                .content-image{
+                .content-image {
                     max-width: 100%;
                     margin-bottom: 2rem;
                 }
             }
-            .member-box{
-                .member-card-box{
+            .member-box {
+                .member-card-box {
                     flex-direction: column;
-                    .member-card{
+                    .member-card {
                         width: 100%;
                         margin-bottom: 1.5rem;
-                        .member-image{
+                        .member-image {
                             max-width: 30%;
                         }
                     }
@@ -65,49 +66,58 @@
             }
         }
     }
-    #projects-landing{
-        .content{
-            padding: 2rem 0 4rem 0;
-            .project-card{
-                
-                margin-bottom: 2rem;
-                .project-link{
-                    .title-block{
-                        
+    #projects-landing {
+        .content {
+            padding: 0 0 4rem 0;
+            .project-card {
+                max-width: 50%;
+
+                .project-link {
+                    img {
+                        max-width: 100%;
+                    }
+                    .title-block {
                         opacity: 1;
-                        .title{
-                            font-size: 0.7rem;
-                            padding: 0.5rem;
+                        .title {
+                            font-size: 0.6rem;
+                            padding: 0.4rem;
                         }
                     }
                 }
             }
         }
     }
-    #projects{
-        .content{
+    #projects {
+        .content {
             width: 100%;
             padding: $content-mob-padd;
             flex-direction: column;
-            .project-headings{
-                font-size: 1.5rem;
-                margin-bottom: 2rem;
-                text-align: center;
-                text-transform: uppercase;
+            
+            .projects-headings-box{
+                .project-headings {
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
             }
-            .project{
-                flex-direction: column;
-                margin-bottom: 3rem;
-                .projects{
-                    margin: 0 0 1rem 0;
+            .projects-box {
+                align-items: center;
+                .project {
+                    max-width: 100%;
+                    flex-direction: column;
+                    margin-bottom: 3rem;
+                    .projects {
+                        margin: 0 0 1rem 0;
+                    }
                 }
             }
         }
-        .nav-btns{
-            margin-top: 3rem;
-            .btns{
-                font-size: 0.7rem;
-                padding: 0.5rem;
+        .nav-btns {
+            margin-top: 0;
+            .btns {
+                font-size: 0.8rem;
+                padding: 0.6rem;
             }
         }
     }
@@ -118,9 +128,11 @@
         .contact,
         .address {
             width: 100%;
-            
+            .contact-detail-link{
+                font-size: 0.8rem;
+            }
         }
-        .about{
+        .about {
             margin-bottom: 1rem;
         }
     }
@@ -145,71 +157,65 @@
             }
         }
     }
-    .copyright{
+    .copyright {
         padding: 0.4rem 0.6rem;
         font-size: 0.55rem;
     }
     .fas,
     .far {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-right: 0.6rem;
     }
 }
-/* Following code has dependencies in the above code. That is the reason the below range has less code */
+/* Following code has dependencies in the above code. That is the reason the below range has less code than the above range */
 @media (min-width: 376px) and (max-width: 450px) {
-    .logo{
-        max-width: 65%;
+    .logo {
+        max-width: 60%;
     }
-    .team-hero {
-        min-height: 14vh;
-        background: url(../../images/team-hero-mob-02.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    
     #projects-landing {
-        .content{
-            
-            padding: 0rem 0rem 4rem;
-            .project-card{
+        .content {
+            padding: 0rem 0rem 5rem;
+            .project-card {
                 margin: 0;
                 max-width: 50%;
-                .project-link{
-                    .title-block{
-                        .title{
-                            font-size: 0.6rem;
+                .project-link {
+                    .title-block {
+                        .title {
+                            font-size: 0.7rem;
                         }
                     }
-                    img{
+                    img {
                         max-width: 100%;
                     }
                 }
             }
         }
     }
-    #projects{
-        .content{
-            .project-headings{
+    #projects {
+        .content {
+            .project-headings {
                 min-height: auto;
                 font-size: 1.3rem;
             }
         }
-        .nav-btns{
+        .nav-btns {
             margin: 0;
         }
     }
-    footer{
-        .contact{
+    footer {
+        .contact {
             order: 2;
         }
-        .address{
+        .address {
             margin-bottom: 1rem;
         }
     }
-    .copyright{
+    .copyright {
         font-size: 0.7rem;
     }
-    .fas, .far{
+    .fas,
+    .far {
         font-size: 1rem;
     }
 }
-
