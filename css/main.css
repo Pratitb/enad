@@ -975,7 +975,7 @@ footer .address {
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .pre-header .pre-header-text {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .logo-link {
     -webkit-box-pack: start;
@@ -1376,7 +1376,7 @@ footer .address {
     font-size: 0.9rem;
   }
   #projects-landing .content {
-    padding: 0 0 5rem 0;
+    padding: 0 0 7rem 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1396,11 +1396,6 @@ footer .address {
   #projects .content .projects-headings-box .project-headings {
     font-size: 1.5rem;
   }
-  #projects .content .projects-box {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   #projects .content .projects-box .project {
     min-height: 40vh;
   }
@@ -1409,6 +1404,9 @@ footer .address {
   }
   footer .about {
     width: 33%;
+  }
+  footer .contact .contact-detail {
+    margin-bottom: 0.5rem;
   }
   footer .address {
     width: 33%;

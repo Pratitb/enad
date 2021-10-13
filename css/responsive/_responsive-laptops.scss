@@ -83,7 +83,7 @@
     }
     #projects-landing {
         .content {
-            padding: 0 0 5rem 0;
+            padding: 0 0 7rem 0;
             justify-content: center;
 
             .project-card {
@@ -110,7 +110,7 @@
                 }
             }
             .projects-box {
-                align-items: center;
+                
                 .project {
                     min-height: 40vh;
                 }
@@ -121,6 +121,11 @@
         padding: 2rem 5rem;
         .about {
             width: 33%;
+        }
+        .contact{
+            .contact-detail{
+                margin-bottom: 0.5rem;
+            }
         }
         .address {
             width: 33%;
