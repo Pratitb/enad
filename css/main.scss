@@ -2,7 +2,7 @@
 @import "utils/variables";
 @import "utils/utilities";
 @import "utils/functions";
-
+@import "components/font-awesome";
 @import "components/content";
 @import "components/mobile-menu";
 @import "components/nav-btns";
@@ -86,6 +86,8 @@
         }
     }
 }
+
+
 @media (max-width: 768px) {
     .navigation {
         display: none;

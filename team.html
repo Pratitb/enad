@@ -17,14 +17,15 @@
         content="At EN+AD, we see each project as a new opportunity to unlearn, learn and explore various architectural solutions which makes the project unique." />
     <meta property="twitter:url" content="https://enarchitecture.in/" />
     <!-- Owl Carousel -->
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css" />
+  <!-- <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css" /> -->
   <!-- AOS library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" /> -->
+  <!-- preload and as style requests the stylesheet asynchronously. onload means it processes the css once it is done loading. nulling the onload helps some browsers to avoid calling it back -->
   <!-- Google icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/main.css" />
   <!-- Favicon -->
@@ -241,10 +242,10 @@
             <a href="https://pratitbangdiwala.in/" class="developer-name">Pratit Bangdiwala</a>
         </p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <!-- <script defer src="js/owl.carousel.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script defer src="js/custom.js"></script>
 </body>
 
 </html>
